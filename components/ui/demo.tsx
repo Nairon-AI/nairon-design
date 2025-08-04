@@ -2,6 +2,8 @@
 import React from "react";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { SparklesText } from "@/components/ui/sparkles-text";
+import { TextAnimate } from "@/components/magicui/text-animate";
+import AttractButton from "@/components/kokonutui/attract-button";
 
 function BackgroundBeamsWithCollisionDemo() {
   return (
@@ -9,14 +11,33 @@ function BackgroundBeamsWithCollisionDemo() {
       {/* Branded Header - Top Left */}
       <div className="absolute top-4 left-4 sm:top-6 sm:left-6 z-30">
         <div className="text-white">
-          <h2 className="text-xl sm:text-2xl font-bold tracking-tight">Design</h2>
+          <TextAnimate
+            className="text-xl sm:text-2xl font-bold tracking-tight"
+            as="h2"
+            animation="slideRight"
+            by="character"
+            delay={0}
+            duration={0.5}
+            once={true}
+          >
+            Design
+          </TextAnimate>
           <a 
             href="https://www.codeandcreed.tech" 
             target="_blank" 
             rel="noopener noreferrer"
             className="relative text-xs sm:text-sm text-gray-400 hover:text-gray-300 transition-colors duration-200 group"
           >
-            A product by Code & Creed ↗
+            <TextAnimate
+              animation="fadeIn"
+              by="word"
+              delay={0.6}
+              duration={0.8}
+              as="span"
+              once={true}
+            >
+              A product by Code & Creed ↗
+            </TextAnimate>
             <span className="absolute bottom-0 left-0 w-0 h-px bg-gray-300 transition-all duration-300 group-hover:w-full"></span>
           </a>
         </div>
@@ -24,20 +45,62 @@ function BackgroundBeamsWithCollisionDemo() {
 
       {/* Main Content */}
       <div className="relative z-20 text-center px-4 max-w-6xl mx-auto">
-        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white font-sans tracking-tight mb-4 sm:mb-6 leading-tight">
+        <TextAnimate
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-white font-sans tracking-tight mb-4 sm:mb-6 leading-tight"
+          as="h1"
+          animation="blurInUp"
+          by="word"
+          delay={0.2}
+          duration={0.8}
+        >
           Ship Beautiful Experiences Faster Than Everyone Else
-        </h1>
+        </TextAnimate>
         <div className="relative mx-auto inline-block max-w-full mb-6">
-          <h2 className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold text-gray-400 flex flex-wrap items-center justify-center gap-2 leading-tight">
-            <span>Everything You Need to Craft</span>
-            <SparklesText text="pixel perfect" className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold text-gray-400 inline whitespace-nowrap" sparklesCount={10} colors={{ first: "#6EE7B7", second: "#34D399" }} />
-            <span>UI</span>
-          </h2>
+          <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-gray-400 flex flex-wrap items-center justify-center gap-2 leading-tight">
+            <TextAnimate
+              animation="slideUp"
+              by="word"
+              delay={1.0}
+              duration={0.6}
+              as="span"
+            >
+              Everything You Need to Craft
+            </TextAnimate>
+            <div className="relative inline-block">
+              <TextAnimate
+                animation="slideUp"
+                by="word"
+                delay={1.1}
+                duration={0.4}
+                as="span"
+                className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-emerald-300 inline whitespace-nowrap"
+              >
+                pixel perfect
+              </TextAnimate>
+              <div className="absolute inset-0 pointer-events-none">
+                <SparklesText 
+                  text="pixel perfect" 
+                  className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold text-transparent inline whitespace-nowrap" 
+                  sparklesCount={10} 
+                  colors={{ first: "#6EE7B7", second: "#34D399" }} 
+                />
+              </div>
+            </div>
+            <TextAnimate
+              animation="slideUp"
+              by="word"
+              delay={1.2}
+              duration={0.4}
+              as="span"
+            >
+              UI
+            </TextAnimate>
+          </div>
         </div>
 
         {/* Build Now Button */}
         <div>
-          <button
+          <AttractButton
             onClick={() => {
               const element = document.getElementById('timeline-section');
               if (element) {
@@ -47,11 +110,9 @@ function BackgroundBeamsWithCollisionDemo() {
                 });
               }
             }}
-            className="group relative px-8 py-4 bg-gradient-to-r from-emerald-900 via-green-900 to-teal-900 text-neutral-200 font-semibold text-lg rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-emerald-900/25"
-          >
-            <span className="relative z-10">Build Now</span>
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-950 via-green-950 to-teal-950 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </button>
+            particleCount={15}
+            attractRadius={60}
+          />
         </div>
       </div>
     </BackgroundBeamsWithCollision>

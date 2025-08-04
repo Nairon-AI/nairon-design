@@ -13,8 +13,9 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
-import { Twitter, Instagram, Linkedin, Link } from "lucide-react";
+import { Twitter, Link } from "lucide-react";
 import { motion } from "framer-motion";
+import { toast } from "sonner";
 
 export default function SocialButton({
     className,
@@ -24,14 +25,21 @@ export default function SocialButton({
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     const shareButtons = [
-        { icon: Twitter, label: "Share on Twitter" },
-        { icon: Instagram, label: "Share on Instagram" },
-        { icon: Linkedin, label: "Share on LinkedIn" },
-        { icon: Link, label: "Copy link" },
+        { icon: Twitter, label: "Twitter link", url: "https://x.com/_7obaid_" },
+        { icon: Link, label: "Website link", url: "https://www.codeandcreed.tech/" },
     ];
 
-    const handleShare = (index: number) => {
+    const handleShare = async (index: number) => {
         setActiveIndex(index);
+        const button = shareButtons[index];
+        
+        try {
+            await navigator.clipboard.writeText(button.url);
+            toast.success(`${button.label} copied to clipboard!`);
+        } catch (err) {
+            toast.error("Failed to copy to clipboard");
+        }
+        
         setTimeout(() => setActiveIndex(null), 300);
     };
 
@@ -72,7 +80,7 @@ export default function SocialButton({
             <motion.div
                 className="absolute top-0 left-0 flex h-10 overflow-hidden"
                 animate={{
-                    width: isVisible ? "auto" : 0,
+                    width: isVisible ? "160px" : 0,
                 }}
                 transition={{
                     duration: 0.3,
@@ -87,12 +95,12 @@ export default function SocialButton({
                         onClick={() => handleShare(i)}
                         className={cn(
                             "h-10",
-                            "w-10",
+                            "w-20",
                             "flex items-center justify-center",
                             "bg-black dark:bg-white",
                             "text-white dark:text-black",
                             i === 0 && "rounded-l-md",
-                            i === 3 && "rounded-r-md",
+                            i === 1 && "rounded-r-md",
                             "border-r border-white/10 dark:border-black/10 last:border-r-0",
                             "hover:bg-gray-900 dark:hover:bg-gray-100",
                             "outline-none",

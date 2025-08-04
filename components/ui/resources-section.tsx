@@ -162,13 +162,13 @@ export function ResourcesSection() {
             Ready to Start Building?
           </h3>
           <p className="text-lg text-neutral-300 mb-8 max-w-2xl mx-auto">
-            Begin with our theme customizer to establish your design system, then explore our curated components
+            Begin with the theme customizer to establish your design system, then explore the Component Libraries
           </p>
           <a
             href="https://tweakcn.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white font-semibold text-lg rounded-full hover:scale-105 transition-transform duration-200"
+            className="inline-flex items-center px-8 py-4 bg-white/10 text-white font-semibold text-lg rounded-full hover:bg-white/20 transition-colors duration-200 hover:scale-105 transition-transform"
           >
             Start with TweakCN →
           </a>

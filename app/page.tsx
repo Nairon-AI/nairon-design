@@ -1,6 +1,7 @@
 import { BackgroundBeamsWithCollisionDemo } from "@/components/ui/demo";
 import { ResourcesSection } from "@/components/ui/resources-section";
 import { Footer } from "@/components/ui/footer";
+import { Toaster } from "sonner";
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
       
       {/* Footer */}
       <Footer />
+      
+      {/* Toast notifications */}
+      <Toaster />
     </div>
   );
 }
