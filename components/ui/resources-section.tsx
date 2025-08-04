@@ -69,11 +69,11 @@ const ResourceCard = ({ name, url, description, featured = false }: ResourceCard
     rel="noopener noreferrer"
     className={`block p-4 rounded-lg border transition-all duration-200 hover:scale-105 ${
       featured
-        ? "bg-gradient-to-br from-purple-900/20 to-pink-900/20 border-purple-700 hover:border-purple-500"
+        ? "bg-gradient-to-br from-emerald-900/20 to-green-900/20 border-emerald-700 hover:border-emerald-500"
         : "bg-neutral-800/50 border-neutral-700 hover:border-neutral-500"
     }`}
   >
-    <h3 className={`font-semibold mb-1 flex items-center gap-2 ${featured ? "text-purple-300" : "text-white"}`}>
+    <h3 className={`font-semibold mb-1 flex items-center gap-2 ${featured ? "text-emerald-300" : "text-white"}`}>
       {name} {featured && <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />}
     </h3>
     <p className="text-sm text-neutral-400">{description}</p>
@@ -157,7 +157,7 @@ export function ResourcesSection() {
         </section>
 
         {/* CTA Section */}
-        <div className="mt-20 text-center p-12 rounded-2xl bg-gradient-to-r from-purple-900/20 to-pink-900/20 border border-purple-700">
+        <div className="mt-20 text-center p-12 rounded-2xl bg-gradient-to-r from-emerald-900/20 to-green-900/20 border border-emerald-700">
           <h3 className="text-3xl font-bold text-white mb-4">
             Ready to Start Building?
           </h3>
@@ -168,7 +168,7 @@ export function ResourcesSection() {
             href="https://tweakcn.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold text-lg rounded-full hover:scale-105 transition-transform duration-200"
+            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-emerald-500 to-green-500 text-white font-semibold text-lg rounded-full hover:scale-105 transition-transform duration-200"
           >
             Start with TweakCN →
           </a>

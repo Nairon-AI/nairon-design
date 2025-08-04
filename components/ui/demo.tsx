@@ -30,7 +30,7 @@ function BackgroundBeamsWithCollisionDemo() {
         <div className="relative mx-auto inline-block max-w-full mb-6">
           <h2 className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold text-gray-400 flex flex-wrap items-center justify-center gap-2 leading-tight">
             <span>Everything You Need to Craft</span>
-            <SparklesText text="pixel perfect" className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold text-gray-400 inline whitespace-nowrap" sparklesCount={10} colors={{ first: "#9E7AFF", second: "#FE8BBB" }} />
+            <SparklesText text="pixel perfect" className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold text-gray-400 inline whitespace-nowrap" sparklesCount={10} colors={{ first: "#6EE7B7", second: "#34D399" }} />
             <span>UI</span>
           </h2>
         </div>
@@ -47,10 +47,10 @@ function BackgroundBeamsWithCollisionDemo() {
                 });
               }
             }}
-            className="group relative px-8 py-4 bg-gradient-to-r from-purple-900 via-violet-900 to-indigo-900 text-neutral-200 font-semibold text-lg rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-900/25"
+            className="group relative px-8 py-4 bg-gradient-to-r from-emerald-900 via-green-900 to-teal-900 text-neutral-200 font-semibold text-lg rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-emerald-900/25"
           >
             <span className="relative z-10">Build Now</span>
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-950 via-violet-950 to-indigo-950 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-950 via-green-950 to-teal-950 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </button>
         </div>
       </div>
