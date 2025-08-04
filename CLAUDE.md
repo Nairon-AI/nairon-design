@@ -2,6 +2,14 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Core Principles
+
+**Think carefully and only action the specific task I have given you with the most concise and elegant solution that changes as little code as possible.**
+
+## Build Verification
+
+**IMPORTANT**: Always run `bun run build` after completing any task to ensure the code compiles without errors. Do not consider a task complete until the build passes successfully.
+
 ## Development Commands
 
 Use these commands for development:

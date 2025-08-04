@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+import { SparklesText } from "@/components/ui/sparkles-text";
 
 function BackgroundBeamsWithCollisionDemo() {
   return (
@@ -22,20 +24,34 @@ function BackgroundBeamsWithCollisionDemo() {
 
       {/* Main Content */}
       <div className="relative z-20 text-center px-4 max-w-6xl mx-auto">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-white font-sans tracking-tight mb-4 sm:mb-6 leading-tight">
-          Design Beautiful Experiences
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white font-sans tracking-tight mb-4 sm:mb-6 leading-tight">
+          Ship Beautiful Experiences Faster Than Everyone Else
         </h1>
-        <div className="relative mx-auto inline-block max-w-full [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
-          <div className="absolute left-0 top-[1px] py-2 sm:py-4 [text-shadow:0_0_rgba(0,0,0,0.1)]">
-            <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold text-gray-400 block leading-tight">
-              All the best UI Component Libraries in one place
-            </span>
-          </div>
-          <div className="relative py-2 sm:py-4">
-            <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold text-gray-400 block leading-tight">
-              All the best UI Component Libraries in one place
-            </span>
-          </div>
+        <div className="relative mx-auto inline-block max-w-full mb-6">
+          <h2 className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold text-gray-400 flex flex-wrap items-center justify-center gap-2 leading-tight">
+            <span>Everything You Need to Craft</span>
+            <SparklesText text="pixel perfect" className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold text-gray-400 inline whitespace-nowrap" sparklesCount={10} colors={{ first: "#9E7AFF", second: "#FE8BBB" }} />
+            <span>UI</span>
+          </h2>
+        </div>
+
+        {/* Build Now Button */}
+        <div>
+          <button
+            onClick={() => {
+              const element = document.getElementById('timeline-section');
+              if (element) {
+                element.scrollIntoView({ 
+                  behavior: 'smooth',
+                  block: 'start'
+                });
+              }
+            }}
+            className="group relative px-8 py-4 bg-gradient-to-r from-purple-900 via-violet-900 to-indigo-900 text-neutral-200 font-semibold text-lg rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-900/25"
+          >
+            <span className="relative z-10">Build Now</span>
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-950 via-violet-950 to-indigo-950 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </button>
         </div>
       </div>
     </BackgroundBeamsWithCollision>
