@@ -54,7 +54,7 @@ function BackgroundBeamsWithCollisionDemo() {
           delay={0.2}
           duration={0.8}
         >
-          Ship Beautiful Experiences Faster Than Everyone Else
+          Ship Beautiful Experiences Faster Than Your Competition
         </TextAnimate>
         <div className="relative mx-auto inline-block max-w-full mb-6">
           <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-gray-400 flex flex-wrap items-center justify-center gap-2 leading-tight">
