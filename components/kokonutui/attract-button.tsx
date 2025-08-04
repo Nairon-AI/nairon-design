@@ -111,7 +111,7 @@ export default function AttractButton({
                         isAttracting && "scale-110"
                     )}
                 />
-                {isAttracting ? "Click Me..." : "Want to know how?"}
+                {isAttracting ? "Click Me..." : "Show me how?"}
             </span>
         </Button>
     );
