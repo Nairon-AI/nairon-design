@@ -20,6 +20,9 @@ const aiTools = [
 
 const componentLibraries = [
   { name: "TweakCN", url: "https://tweakcn.com/", description: "Visual theme generator for shadcn/ui", featured: true },
+  { name: "Magic UI", url: "https://magicui.design/", description: "Beautiful React components with Tailwind CSS", featured: true },
+  { name: "Aceternity UI", url: "https://ui.aceternity.com/", description: "Modern UI components and templates", featured: true },
+  { name: "21st Century Components", url: "https://21st.dev/", description: "Next-generation UI components", featured: true },
   { name: "Kibo UI", url: "https://www.kibo-ui.com/", description: "Advanced components for shadcn/ui" },
   { name: "Motion Primitives", url: "https://motion-primitives.com/", description: "Beautiful, animated components" },
   { name: "nsUI", url: "https://nsui.irung.me/", description: "Shadcn/UI Marketing Blocks" },
@@ -27,7 +30,7 @@ const componentLibraries = [
   { name: "MVP Blocks", url: "https://blocks.mvp-subha.me/", description: "Beautiful UI components with Tailwind" },
   { name: "Origin UI", url: "https://originui.com/", description: "Beautiful components with Tailwind CSS" },
   { name: "Bundui", url: "https://bundui.io/", description: "Motion components, copy-paste ready" },
-  { name: "Jakub Król", url: "https://jakub.kr/", description: "Beautifully designed components" },
+  { name: "Jakub Krehel", url: "https://jakub.kr/", description: "Beautifully designed components" },
   { name: "Fancy Components", url: "https://www.fancycomponents.dev/", description: "Fun components for micro-interactions" },
   { name: "Prism UI", url: "https://www.prismui.tech/", description: "Customizable library on shadcn/ui" },
   { name: "UILabs", url: "https://www.uilabs.dev/", description: "Modern UI components" },
@@ -40,6 +43,7 @@ const componentLibraries = [
 ];
 
 const animationTools = [
+  { name: "Rive", url: "https://rive.app/", description: "Interactive design tool with stateful graphics format and multi-platform runtime", featured: true },
   { name: "AnimeJS", url: "https://animejs.com/", description: "JavaScript animation engine" },
   { name: "Unicorn Studio", url: "https://www.unicorn.studio/", description: "Create motion and interaction without code" },
   { name: "Animated Icons", url: "https://icons.pqoqubbw.dev/", description: "Smooth animated SVG icons" },
