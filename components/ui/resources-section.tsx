@@ -87,7 +87,7 @@ export function ResourcesSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-xl text-neutral-300 max-w-3xl mx-auto">
-            Use our curated collection of the best tools, libraries, and resources for rapid UI prototyping
+            Use our curated collection of tools, libraries, and resources for rapid UI prototyping
           </p>
         </div>
 
