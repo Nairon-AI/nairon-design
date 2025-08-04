@@ -4,6 +4,7 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-w
 import { SparklesText } from "@/components/ui/sparkles-text";
 import { TextAnimate } from "@/components/magicui/text-animate";
 import AttractButton from "@/components/kokonutui/attract-button";
+import { motion } from "framer-motion";
 
 function BackgroundBeamsWithCollisionDemo() {
   return (
@@ -12,7 +13,7 @@ function BackgroundBeamsWithCollisionDemo() {
       <div className="absolute top-4 left-4 sm:top-6 sm:left-6 z-30">
         <div className="text-white">
           <TextAnimate
-            className="text-xl sm:text-2xl font-bold tracking-tight"
+            className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight"
             as="h2"
             animation="slideRight"
             by="character"
@@ -26,7 +27,7 @@ function BackgroundBeamsWithCollisionDemo() {
             href="https://www.codeandcreed.tech" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="relative text-xs sm:text-sm text-gray-400 hover:text-gray-300 transition-colors duration-200 group"
+            className="relative text-xs sm:text-sm md:text-base lg:text-lg text-gray-400 hover:text-gray-300 transition-colors duration-200 group"
           >
             <TextAnimate
               animation="fadeIn"
@@ -80,7 +81,7 @@ function BackgroundBeamsWithCollisionDemo() {
               <div className="absolute inset-0 pointer-events-none">
                 <SparklesText 
                   text="pixel perfect" 
-                  className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold text-transparent inline whitespace-nowrap" 
+                  className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-transparent inline whitespace-nowrap" 
                   sparklesCount={10} 
                   colors={{ first: "#6EE7B7", second: "#34D399" }} 
                 />
@@ -99,7 +100,20 @@ function BackgroundBeamsWithCollisionDemo() {
         </div>
 
         {/* Build Now Button */}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, filter: "blur(10px)", y: 20 }}
+          whileInView={{ 
+            opacity: 1, 
+            filter: "blur(0px)", 
+            y: 0 
+          }}
+          exit={{ opacity: 0, filter: "blur(10px)", y: 20 }}
+          transition={{
+            duration: 0.6,
+            ease: "easeOut"
+          }}
+          viewport={{ once: false, amount: 0.3 }}
+        >
           <AttractButton
             onClick={() => {
               const element = document.getElementById('timeline-section');
@@ -113,7 +127,7 @@ function BackgroundBeamsWithCollisionDemo() {
             particleCount={15}
             attractRadius={60}
           />
-        </div>
+        </motion.div>
       </div>
     </BackgroundBeamsWithCollision>
   );
