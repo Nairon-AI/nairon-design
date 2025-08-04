@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { SparklesText } from "@/components/ui/sparkles-text";
 import { TextAnimate } from "@/components/magicui/text-animate";
@@ -12,22 +13,52 @@ function BackgroundBeamsWithCollisionDemo() {
       {/* Branded Header - Top Left */}
       <div className="absolute top-4 left-4 sm:top-6 sm:left-6 z-30">
         <div className="text-white">
-          <TextAnimate
-            className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight"
-            as="h2"
-            animation="slideRight"
-            by="character"
-            delay={0}
-            duration={0.5}
-            once={true}
-          >
-            Design
-          </TextAnimate>
+          {/* Logo and Design text - horizontal on larger screens */}
+          <div className="flex items-center gap-2 sm:gap-3">
+            <Image 
+              src="/design.png" 
+              alt="Design Logo" 
+              width={40}
+              height={40}
+              className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 object-contain"
+            />
+            <TextAnimate
+              className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight"
+              as="h2"
+              animation="slideRight"
+              by="character"
+              delay={0}
+              duration={0.5}
+              once={true}
+            >
+              Design
+            </TextAnimate>
+            {/* Code & Creed link - only visible on larger screens */}
+            <a 
+              href="https://www.codeandcreed.tech" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="relative hidden sm:inline text-xs sm:text-sm md:text-base lg:text-lg text-gray-400 hover:text-gray-300 transition-colors duration-200 group ml-2"
+            >
+              <TextAnimate
+                animation="fadeIn"
+                by="word"
+                delay={0.6}
+                duration={0.8}
+                as="span"
+                once={true}
+              >
+                A product by Code & Creed ↗
+              </TextAnimate>
+              <span className="absolute bottom-0 left-0 w-0 h-px bg-gray-300 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </div>
+          {/* Code & Creed link - below logo on smaller screens */}
           <a 
             href="https://www.codeandcreed.tech" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="relative text-xs sm:text-sm md:text-base lg:text-lg text-gray-400 hover:text-gray-300 transition-colors duration-200 group"
+            className="relative sm:hidden block mt-1 text-xs text-gray-400 hover:text-gray-300 transition-colors duration-200 group ml-8"
           >
             <TextAnimate
               animation="fadeIn"
