@@ -31,7 +31,7 @@ const componentLibraries = [
   { name: "MVP Blocks", url: "https://blocks.mvp-subha.me/", description: "Beautiful UI components with Tailwind" },
   { name: "Origin UI", url: "https://originui.com/", description: "Beautiful components with Tailwind" },
   { name: "Bundui", url: "https://bundui.io/", description: "Motion components, copy-paste ready" },
-  { name: "Jakub Krehel", url: "https://jakub.kr/", description: "Beautifully designed components" },
+  { name: "Jakub Krehel", url: "https://jakub.kr/", description: "Design Engineer with a passion for building beautiful components" },
   { name: "Fancy Components", url: "https://www.fancycomponents.dev/", description: "Fun components for micro-interactions" },
   { name: "Prism UI", url: "https://www.prismui.tech/", description: "Customizable library on shadcn/ui" },
   { name: "UILabs", url: "https://www.uilabs.dev/", description: "Modern UI components" },
