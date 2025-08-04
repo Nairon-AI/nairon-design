@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Palette, Cpu, Package, Sparkles, Wrench, Star } from "lucide-react";
+import { LinkPreview } from "@/components/ui/link-preview";
 
 const inspirationTools = [
   { name: "Layers", url: "https://layers.to/", description: "UI design inspiration gallery" },
@@ -63,21 +64,20 @@ interface ResourceCardProps {
 }
 
 const ResourceCard = ({ name, url, description, featured = false }: ResourceCardProps) => (
-  <a
-    href={url}
-    target="_blank"
-    rel="noopener noreferrer"
-    className={`block p-4 rounded-lg border transition-all duration-200 hover:scale-105 ${
-      featured
-        ? "bg-gradient-to-br from-emerald-900/20 to-green-900/20 border-emerald-700 hover:border-emerald-500"
-        : "bg-neutral-800/50 border-neutral-700 hover:border-neutral-500"
-    }`}
-  >
-    <h3 className={`font-semibold mb-1 flex items-center gap-2 ${featured ? "text-emerald-300" : "text-white"}`}>
-      {name} {featured && <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />}
-    </h3>
-    <p className="text-sm text-neutral-400">{description}</p>
-  </a>
+  <LinkPreview url={url}>
+    <div
+      className={`block p-4 rounded-lg border transition-all duration-200 hover:scale-105 ${
+        featured
+          ? "bg-gradient-to-br from-emerald-900/20 to-green-900/20 border-emerald-700 hover:border-emerald-500"
+          : "bg-neutral-800/50 border-neutral-700 hover:border-neutral-500"
+      }`}
+    >
+      <h3 className={`font-semibold mb-1 flex items-center gap-2 ${featured ? "text-emerald-300" : "text-white"}`}>
+        {name} {featured && <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />}
+      </h3>
+      <p className="text-sm text-neutral-400">{description}</p>
+    </div>
+  </LinkPreview>
 );
 
 export function ResourcesSection() {
@@ -164,14 +164,11 @@ export function ResourcesSection() {
           <p className="text-lg text-neutral-300 mb-8 max-w-2xl mx-auto">
             Begin with the theme customizer to establish your design system, then explore the Component Libraries
           </p>
-          <a
-            href="https://tweakcn.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 bg-white/10 text-white font-semibold text-lg rounded-full hover:bg-white/20 transition-colors duration-200 hover:scale-105 transition-transform"
-          >
-            Start with TweakCN →
-          </a>
+          <LinkPreview url="https://tweakcn.com/">
+            <button className="inline-flex items-center px-8 py-4 bg-white/10 text-white font-semibold text-lg rounded-full hover:bg-white/20 transition-colors duration-200 hover:scale-105 transition-transform">
+              Start with TweakCN →
+            </button>
+          </LinkPreview>
         </div>
       </div>
     </div>
