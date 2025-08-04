@@ -16,7 +16,7 @@ function BackgroundBeamsWithCollisionDemo() {
           {/* Logo and Design text - horizontal on larger screens */}
           <div className="flex items-center gap-2 sm:gap-3">
             <Image 
-              src="/design.png" 
+              src="/design.svg" 
               alt="Design Logo" 
               width={40}
               height={40}
