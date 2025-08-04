@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Palette, Cpu, Package, Sparkles, Wrench, Star } from "lucide-react";
-import { LinkPreview } from "@/components/ui/link-preview";
+import { LinkPreview } from "@/components/ui/link-preview-static";
 
 const inspirationTools = [
   { name: "Layers", url: "https://layers.to/", description: "UI design inspiration gallery" },
@@ -21,7 +21,7 @@ const aiTools = [
 
 const componentLibraries = [
   { name: "TweakCN", url: "https://tweakcn.com/", description: "Visual theme generator for shadcn/ui", featured: true },
-  { name: "Magic UI", url: "https://magicui.design/", description: "Beautiful React components with Tailwind CSS", featured: true },
+  { name: "Magic UI", url: "https://magicui.design/", description: "Beautiful React components with Tailwind", featured: true },
   { name: "Aceternity UI", url: "https://ui.aceternity.com/", description: "Modern UI components and templates", featured: true },
   { name: "21st Century Components", url: "https://21st.dev/", description: "Next-generation UI components", featured: true },
   { name: "Kibo UI", url: "https://www.kibo-ui.com/", description: "Advanced components for shadcn/ui" },
@@ -29,7 +29,7 @@ const componentLibraries = [
   { name: "nsUI", url: "https://nsui.irung.me/", description: "Shadcn/UI Marketing Blocks" },
   { name: "LnDev UI", url: "https://ui.lndev.me/", description: "Clean library of motion components" },
   { name: "MVP Blocks", url: "https://blocks.mvp-subha.me/", description: "Beautiful UI components with Tailwind" },
-  { name: "Origin UI", url: "https://originui.com/", description: "Beautiful components with Tailwind CSS" },
+  { name: "Origin UI", url: "https://originui.com/", description: "Beautiful components with Tailwind" },
   { name: "Bundui", url: "https://bundui.io/", description: "Motion components, copy-paste ready" },
   { name: "Jakub Krehel", url: "https://jakub.kr/", description: "Beautifully designed components" },
   { name: "Fancy Components", url: "https://www.fancycomponents.dev/", description: "Fun components for micro-interactions" },
