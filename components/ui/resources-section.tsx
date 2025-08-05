@@ -17,6 +17,7 @@ const aiTools = [
   { name: "v0", url: "https://v0.dev", description: "AI-powered UI generation with professional polish", featured: true },
   { name: "SuperDesign", url: "http://superdesign.dev/", description: "Generate 10 designs in parallel for rapid exploration", featured: true },
   { name: "Onlook", url: "https://onlook.com/", description: "Visual React editor - 'Cursor for Designers'", featured: true },
+  { name: "Aura", url: "https://aura.build/", description: "Generate designs in seconds and export to HTML or Figma.", featured: true },
 ];
 
 const componentLibraries = [
