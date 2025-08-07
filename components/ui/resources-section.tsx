@@ -42,6 +42,7 @@ const componentLibraries = [
   { name: "Luxe", url: "https://www.luxeui.com/", description: "Copy-paste beautiful components" },
   { name: "Catalyst", url: "https://catalyst.tailwindui.com/", description: "Premium Tailwind CSS components" },
   { name: "HeadlessUI", url: "https://headlessui.com/", description: "Accessible UI primitives" },
+  { name: "EvilCharts", url: "https://evilcharts.com/", description: "React chart library with animated components built on shadcn/recharts" },
 ];
 
 const animationTools = [
