@@ -6,6 +6,7 @@ import { ExternalLink } from "lucide-react";
 
 export function PrivatisedModal() {
   const [isInIframe, setIsInIframe] = useState(true);
+  const [isUnlocked, setIsUnlocked] = useState(false);
 
   useEffect(() => {
     // Check if the page is loaded in an iframe
@@ -15,10 +16,42 @@ export function PrivatisedModal() {
       // If access is blocked due to cross-origin, assume it's in an iframe
       setIsInIframe(true);
     }
+
+    // Check if the URL contains /unlock
+    const checkUnlockPath = () => {
+      const path = window.location.pathname;
+      setIsUnlocked(path.includes('/unlock'));
+    };
+
+    checkUnlockPath();
+
+    // Listen for URL changes
+    const handlePopState = () => checkUnlockPath();
+    window.addEventListener('popstate', handlePopState);
+
+    // Also check on pushState/replaceState
+    const originalPushState = history.pushState;
+    const originalReplaceState = history.replaceState;
+
+    history.pushState = function(...args) {
+      originalPushState.apply(history, args);
+      checkUnlockPath();
+    };
+
+    history.replaceState = function(...args) {
+      originalReplaceState.apply(history, args);
+      checkUnlockPath();
+    };
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+      history.pushState = originalPushState;
+      history.replaceState = originalReplaceState;
+    };
   }, []);
 
-  // Only show modal when NOT in iframe
-  if (isInIframe) {
+  // Show modal only when NOT in iframe AND NOT unlocked
+  if (isInIframe || isUnlocked) {
     return null;
   }
 
