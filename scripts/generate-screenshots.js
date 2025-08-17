@@ -68,6 +68,7 @@ const allTools = [
 
   // Utility Tools
   { name: "Iconsax", url: "https://iconsax.dev/", category: "utility" },
+  { name: "Nucleo", url: "https://nucleoapp.com/", category: "utility" },
   { name: "Tailwind Converter", url: "https://tailwindconverter.app/", category: "utility" },
   { name: "TwBlocks", url: "https://www.twblocks.com/", category: "utility" },
 ];
