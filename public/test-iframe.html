@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Iframe Embedding</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: system-ui, -apple-system, sans-serif;
+            background: #111;
+            color: #fff;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+        .note {
+            margin-top: 20px;
+            padding: 15px;
+            background: #222;
+            border-radius: 8px;
+            border-left: 4px solid #0070f3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testing Iframe Embedding</h1>
+    
+    <iframe src="http://localhost:3000" title="Embedded App"></iframe>
+    
+    <div class="note">
+        <strong>How to test:</strong>
+        <ol>
+            <li>Run <code>bun dev</code> to start the development server</li>
+            <li>Open this file in a browser: <code>http://localhost:3000/test-iframe.html</code></li>
+            <li>The app should display normally inside the iframe above</li>
+            <li>Open <code>http://localhost:3000</code> directly in a new tab</li>
+            <li>You should see the blur effect and modal when accessing directly</li>
+        </ol>
+    </div>
+</body>
+</html>

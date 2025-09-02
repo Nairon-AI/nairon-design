@@ -43,6 +43,8 @@ const componentLibraries = [
   { name: "Catalyst", url: "https://catalyst.tailwindui.com/", description: "Premium Tailwind CSS components" },
   { name: "HeadlessUI", url: "https://headlessui.com/", description: "Accessible UI primitives" },
   { name: "ReactBits", url: "https://reactbits.dev/", description: "Highly customizable animated components that make your React projects truly stand out" },
+  { name: "EvilCharts", url: "https://evilcharts.com/", description: "React chart library with animated components built on shadcn/recharts" },
+  { name: "REUI", url: "https://reui.io", description: "Modern React components library" }
 ];
 
 const animationTools = [
@@ -54,6 +56,7 @@ const animationTools = [
 
 const utilityTools = [
   { name: "Iconsax", url: "https://iconsax.dev/", description: "5912 open source SVG icons" },
+  { name: "Nucleo", url: "https://nucleoapp.com/", description: "30,000+ premium icons and SVG library manager" },
   { name: "Tailwind Converter", url: "https://tailwindconverter.app/", description: "Convert CSS to Tailwind" },
   { name: "TwBlocks", url: "https://www.twblocks.com/", description: "React SaaS website blocks" },
 ];
