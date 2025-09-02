@@ -42,6 +42,7 @@ const componentLibraries = [
   { name: "Luxe", url: "https://www.luxeui.com/", description: "Copy-paste beautiful components" },
   { name: "Catalyst", url: "https://catalyst.tailwindui.com/", description: "Premium Tailwind CSS components" },
   { name: "HeadlessUI", url: "https://headlessui.com/", description: "Accessible UI primitives" },
+  { name: "Tailus", url: "https://ui.tailus.io/", description: "Highly customizable React components for crafting modern, personalized websites and applications." },
 ];
 
 const animationTools = [
