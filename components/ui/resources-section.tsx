@@ -44,7 +44,8 @@ const componentLibraries = [
   { name: "HeadlessUI", url: "https://headlessui.com/", description: "Accessible UI primitives" },
   { name: "ReactBits", url: "https://reactbits.dev/", description: "Highly customizable animated components that make your React projects truly stand out" },
   { name: "EvilCharts", url: "https://evilcharts.com/", description: "React chart library with animated components built on shadcn/recharts" },
-  { name: "REUI", url: "https://reui.io", description: "Modern React components library" }
+  { name: "REUI", url: "https://reui.io", description: "Modern React components library" },
+  { name: "Prompt Kit", url: "https://www.prompt-kit.com", description: "High-quality, accessible, and customizable components for AI interfaces" }
 ];
 
 const animationTools = [
