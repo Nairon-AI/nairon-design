@@ -25,6 +25,7 @@ const componentLibraries = [
   { name: "Magic UI", url: "https://magicui.design/", description: "Beautiful React components with Tailwind", featured: true },
   { name: "Aceternity UI", url: "https://ui.aceternity.com/", description: "Modern UI components and templates", featured: true },
   { name: "21st Century Components", url: "https://21st.dev/", description: "Next-generation UI components", featured: true },
+  { name: "ReactBits", url: "https://reactbits.dev/", description: "Highly customizable animated components that make your React projects truly stand out", featured: true },
   { name: "Kibo UI", url: "https://www.kibo-ui.com/", description: "Advanced components for shadcn/ui" },
   { name: "Motion Primitives", url: "https://motion-primitives.com/", description: "Beautiful, animated components" },
   { name: "nsUI", url: "https://nsui.irung.me/", description: "Shadcn/UI Marketing Blocks" },
