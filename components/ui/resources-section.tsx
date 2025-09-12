@@ -11,6 +11,7 @@ const inspirationTools = [
   { name: "NextFramer", url: "https://www.nextframer.com/", description: "Daily landing page templates built in public" },
   { name: "Sprrrint", url: "https://sprrrint.com/", description: "300+ Figma components and gradients, updated daily" },
   { name: "Web Interactions", url: "https://www.webinteractions.gallery/", description: "Animated elements gallery" },
+  { name: "Best Designs on X", url: "https://bestdesignsonx.com", description: "Daily curation of the best designs shared on X" },
 ];
 
 const aiTools = [
