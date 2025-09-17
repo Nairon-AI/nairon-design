@@ -96,7 +96,7 @@ export function PrivatisedModal() {
                 </InputOTPGroup>
               </InputOTP>
             </div>
-            <Button onClick={submit} className="w-full">Unlock</Button>
+            <Button onClick={submit} className="w-full bg-zinc-800 hover:bg-zinc-700 text-white border border-zinc-700 px-4 py-2 text-sm rounded-md">Unlock</Button>
           </div>
           
           <Button
