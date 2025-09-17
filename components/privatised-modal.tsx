@@ -3,10 +3,16 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
+import { InputOTP, InputOTPGroup, InputOTPSlot } from "@/components/ui/input-otp";
+
+function getCookie(name: string) {
+  return document.cookie.split("; ").find(c => c.startsWith(name + "="))?.split("=")[1];
+}
 
 export function PrivatisedModal() {
   const [isInIframe, setIsInIframe] = useState(true);
   const [isUnlocked, setIsUnlocked] = useState(false);
+  const [otp, setOtp] = useState("");
 
   useEffect(() => {
     // Check if the page is loaded in an iframe
@@ -17,16 +23,16 @@ export function PrivatisedModal() {
       setIsInIframe(true);
     }
 
-    // Check if the URL contains /unlock
-    const checkUnlockPath = () => {
-      const path = window.location.pathname;
-      setIsUnlocked(path.includes('/unlock'));
+    // Consider unlocked if cc_access cookie is present (set by middleware on valid code)
+    const checkUnlocked = () => {
+      const hasCookie = typeof document !== 'undefined' && !!getCookie('cc_access');
+      setIsUnlocked(hasCookie);
     };
 
-    checkUnlockPath();
+    checkUnlocked();
 
     // Listen for URL changes
-    const handlePopState = () => checkUnlockPath();
+    const handlePopState = () => checkUnlocked();
     window.addEventListener('popstate', handlePopState);
 
     // Also check on pushState/replaceState
@@ -34,13 +40,13 @@ export function PrivatisedModal() {
     const originalReplaceState = history.replaceState;
 
     history.pushState = function(...args) {
-      originalPushState.apply(history, args);
-      checkUnlockPath();
+      originalPushState.apply(history, args as any);
+      checkUnlocked();
     };
 
     history.replaceState = function(...args) {
-      originalReplaceState.apply(history, args);
-      checkUnlockPath();
+      originalReplaceState.apply(history, args as any);
+      checkUnlocked();
     };
 
     return () => {
@@ -55,6 +61,13 @@ export function PrivatisedModal() {
     return null;
   }
 
+  const submit = () => {
+    if (otp.length !== 6) return;
+    const url = new URL(window.location.href);
+    url.searchParams.set('code', otp);
+    window.location.href = url.toString();
+  };
+
   return (
     <>
       {/* Blur overlay */}
@@ -66,8 +79,24 @@ export function PrivatisedModal() {
           <div className="space-y-2">
             <h2 className="text-2xl font-bold">This Tool Has Been Privatised</h2>
             <p className="text-muted-foreground">
-              This application is no longer directly accessible. Please visit Code & Creed to learn more about our services and tools.
+              This application is no longer directly accessible. If youre an Accelerator member or purchaser of one of our paid Starter Kits, contact us on Discord for the access code.
             </p>
+          </div>
+
+          <div className="space-y-3">
+            <div className="flex items-center justify-center">
+              <InputOTP maxLength={6} value={otp} onChange={setOtp}>
+                <InputOTPGroup>
+                  <InputOTPSlot index={0} />
+                  <InputOTPSlot index={1} />
+                  <InputOTPSlot index={2} />
+                  <InputOTPSlot index={3} />
+                  <InputOTPSlot index={4} />
+                  <InputOTPSlot index={5} />
+                </InputOTPGroup>
+              </InputOTP>
+            </div>
+            <Button onClick={submit} className="w-full">Unlock</Button>
           </div>
           
           <Button
