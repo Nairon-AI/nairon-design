@@ -18,7 +18,7 @@ export function PrivatisedModal() {
     // Check if the page is loaded in an iframe
     try {
       setIsInIframe(window.self !== window.top);
-    } catch (e) {
+    } catch {
       // If access is blocked due to cross-origin, assume it's in an iframe
       setIsInIframe(true);
     }
@@ -39,13 +39,17 @@ export function PrivatisedModal() {
     const originalPushState = history.pushState;
     const originalReplaceState = history.replaceState;
 
-    history.pushState = function(...args) {
-      originalPushState.apply(history, args as any);
+    history.pushState = function(
+      ...args: Parameters<History['pushState']>
+    ): void {
+      originalPushState.apply(history, args);
       checkUnlocked();
     };
 
-    history.replaceState = function(...args) {
-      originalReplaceState.apply(history, args as any);
+    history.replaceState = function(
+      ...args: Parameters<History['replaceState']>
+    ): void {
+      originalReplaceState.apply(history, args);
       checkUnlocked();
     };
 
