@@ -5,8 +5,12 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import { InputOTP, InputOTPGroup, InputOTPSlot } from "@/components/ui/input-otp";
 
-function getCookie(name: string) {
-  return document.cookie.split("; ").find(c => c.startsWith(name + "="))?.split("=")[1];
+function isUnlockedLS() {
+  try {
+    return typeof window !== "undefined" && localStorage.getItem("cc_access") === "1";
+  } catch {
+    return false;
+  }
 }
 
 export function PrivatisedModal() {
@@ -23,10 +27,25 @@ export function PrivatisedModal() {
       setIsInIframe(true);
     }
 
-    // Consider unlocked if cc_access cookie is present (set by middleware on valid code)
+    // Consider unlocked if localStorage flag is present or ?code=613902 in URL
     const checkUnlocked = () => {
-      const hasCookie = typeof document !== 'undefined' && !!getCookie('cc_access');
-      setIsUnlocked(hasCookie);
+      let unlocked = isUnlockedLS();
+
+      try {
+        const url = new URL(window.location.href);
+        const qsCode = url.searchParams.get('code');
+        if (qsCode && /^\d{6}$/.test(qsCode)) {
+          if (qsCode === '613902') {
+            localStorage.setItem('cc_access', '1');
+            unlocked = true;
+          }
+          // Clean the URL (no reload)
+          url.searchParams.delete('code');
+          history.replaceState(history.state, '', url.toString());
+        }
+      } catch {}
+
+      setIsUnlocked(unlocked);
     };
 
     checkUnlocked();
@@ -66,10 +85,21 @@ export function PrivatisedModal() {
   }
 
   const submit = () => {
-    if (otp.length !== 6) return;
-    const url = new URL(window.location.href);
-    url.searchParams.set('code', otp);
-    window.location.href = url.toString();
+    if (!/^\d{6}$/.test(otp)) return;
+    if (otp === '613902') {
+      try {
+        localStorage.setItem('cc_access', '1');
+      } catch {}
+      setIsUnlocked(true);
+      // Clean any lingering ?code without reload
+      try {
+        const url = new URL(window.location.href);
+        if (url.searchParams.has('code')) {
+          url.searchParams.delete('code');
+          history.replaceState(history.state, '', url.toString());
+        }
+      } catch {}
+    }
   };
 
   return (
@@ -89,7 +119,7 @@ export function PrivatisedModal() {
 
           <div className="space-y-3">
             <div className="flex items-center justify-center">
-              <InputOTP maxLength={6} value={otp} onChange={setOtp}>
+              <InputOTP maxLength={6} value={otp} onChange={setOtp} inputMode="numeric" aria-label="6-digit access code">
                 <InputOTPGroup>
                   <InputOTPSlot index={0} />
                   <InputOTPSlot index={1} />

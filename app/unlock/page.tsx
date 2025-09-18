@@ -6,18 +6,24 @@ export default function Unlock() {
   const [value, setValue] = useState("");
 
   const submit = () => {
-    if (value.length !== 6) return;
-    const url = new URL(window.location.href);
-    url.pathname = "/";
-    url.searchParams.set("code", value);
-    window.location.href = url.toString();
+    if (!/^\d{6}$/.test(value)) return;
+    if (value === "613902") {
+      try {
+        localStorage.setItem("cc_access", "1");
+      } catch {}
+      // Clean any ?code and go home without relying on middleware
+      const url = new URL(window.location.href);
+      url.pathname = "/";
+      url.searchParams.delete("code");
+      window.location.href = url.toString();
+    }
   };
 
   return (
     <div style={{ minHeight: "100dvh", display: "grid", placeItems: "center", padding: 24 }}>
       <div style={{ maxWidth: 360, width: "100%", display: "grid", gap: 12 }}>
         <h1>Enter Access Code</h1>
-        <InputOTP maxLength={6} value={value} onChange={setValue}>
+        <InputOTP maxLength={6} value={value} onChange={setValue} inputMode="numeric" aria-label="6-digit access code">
           <InputOTPGroup>
             <InputOTPSlot index={0} />
             <InputOTPSlot index={1} />
