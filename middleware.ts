@@ -33,9 +33,10 @@ export async function middleware(request: NextRequest) {
       const cleanUrl = new URL(url);
       cleanUrl.searchParams.delete('code');
       const res = NextResponse.redirect(cleanUrl);
+      const isSecure = url.protocol === 'https:' && !url.hostname.includes('localhost');
       res.cookies.set('cc_access', EXPECTED_HASH, {
         httpOnly: false,
-        secure: true,
+        secure: isSecure,
         sameSite: 'lax',
         path: '/',
       });
