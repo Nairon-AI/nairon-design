@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Palette, Cpu, Package, Sparkles, Wrench, Star } from "lucide-react";
+import { Palette, Cpu, Package, Sparkles, Wrench, Star, LayoutTemplate } from "lucide-react";
 import { LinkPreview } from "@/components/ui/link-preview-static";
 
 const inspirationTools = [
@@ -12,6 +12,18 @@ const inspirationTools = [
   { name: "Sprrrint", url: "https://sprrrint.com/", description: "300+ Figma components and gradients, updated daily" },
   { name: "Web Interactions", url: "https://www.webinteractions.gallery/", description: "Animated elements gallery" },
   { name: "Best Designs on X", url: "https://bestdesignsonx.com", description: "Daily curation of the best designs shared on X" },
+];
+
+const landingPageTemplates = [
+  { name: "Browser Supply", url: "https://browser.supply", description: "Curated landing page templates and resources" },
+  { name: "Framer Marketplace", url: "https://www.framer.com/marketplace", description: "Official Framer marketplace for templates" },
+  { name: "Creative Market", url: "https://creativemarket.com/templates-themes/website-templates/framer-templates", description: "Framer templates on Creative Market" },
+  { name: "SuperbThemes", url: "https://superbthemes.com/framer-landing-page-templates", description: "Curated Framer landing page templates" },
+  { name: "Framerbite Templates", url: "https://framerbite.com/all-framer-templates", description: "Premium Framer templates collection" },
+  { name: "SaaS Landing Page", url: "https://saaslandingpage.com/templates/framer/", description: "SaaS landing page templates for Framer" },
+  { name: "Craftwork", url: "https://craftwork.design/catalog/framer", description: "High-quality Framer templates" },
+  { name: "Green Yang", url: "https://www.framer.com/@green-yang/", description: "Framer templates by Green Yang" },
+  { name: "Nest — Industries", url: "https://nest.show/industries/all", description: "Industry-specific landing page templates" },
 ];
 
 const aiTools = [
@@ -107,6 +119,19 @@ export function ResourcesSection() {
           </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {inspirationTools.map((tool) => (
+              <ResourceCard key={tool.name} {...tool} />
+            ))}
+          </div>
+        </section>
+
+        {/* Landing Page Templates */}
+        <section className="mb-16">
+          <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+            <LayoutTemplate className="w-6 h-6" />
+            Landing Page Templates
+          </h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {landingPageTemplates.map((tool) => (
               <ResourceCard key={tool.name} {...tool} />
             ))}
           </div>
