@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { PrivatisedModal } from "@/components/privatised-modal";
 
 export const metadata: Metadata = {
   title: "Build Beautiful in minutes, not days",
@@ -16,7 +15,6 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className="font-sans antialiased dark">
         {children}
-        <PrivatisedModal />
       </body>
     </html>
   );
