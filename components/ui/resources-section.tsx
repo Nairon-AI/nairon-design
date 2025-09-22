@@ -12,6 +12,7 @@ const inspirationTools = [
   { name: "Sprrrint", url: "https://sprrrint.com/", description: "300+ Figma components and gradients, updated daily" },
   { name: "Web Interactions", url: "https://www.webinteractions.gallery/", description: "Animated elements gallery" },
   { name: "Best Designs on X", url: "https://bestdesignsonx.com", description: "Daily curation of the best designs shared on X" },
+  { name: "Mobbin", url: "https://mobbin.com/", description: "Discover real-world iOS & Web design inspiration" },
 ];
 
 const landingPageTemplates = [
