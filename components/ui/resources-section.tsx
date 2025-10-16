@@ -60,7 +60,9 @@ const componentLibraries = [
   { name: "EvilCharts", url: "https://evilcharts.com/", description: "React chart library with animated components built on shadcn/recharts" },
   { name: "REUI", url: "https://reui.io", description: "Modern React components library" },
   { name: "Prompt Kit", url: "https://www.prompt-kit.com", description: "High-quality, accessible, and customizable components for AI interfaces" },
-  { name: "Tailus", url: "https://ui.tailus.io/", description: "Highly customizable React components for crafting modern, personalized websites and applications." }
+  { name: "Tailus", url: "https://ui.tailus.io/", description: "Highly customizable React components for crafting modern, personalized websites and applications." },
+  { name: "Blocks.so", url: "https://blocks.so/", description: "Clean, modern building blocks. Copy and paste into your apps. Works with all React frameworks" },
+  { name: "ElevenLabs UI", url: "https://ui.elevenlabs.io/", description: "A collection of Open Source agent and audio components that you can customize and extend" }
 ];
 
 const animationTools = [
