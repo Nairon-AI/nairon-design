@@ -26,7 +26,7 @@ export default function SocialButton({
 
     const shareButtons = [
         { icon: Twitter, label: "Twitter link", url: "https://x.com/_7obaid_" },
-        { icon: Link, label: "Website link", url: "https://www.codeandcreed.tech/" },
+        { icon: Link, label: "Website link", url: "https://accelerator.codeandcreed.tech/" },
     ];
 
     const handleShare = async (index: number) => {

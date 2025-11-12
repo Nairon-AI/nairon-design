@@ -15,7 +15,7 @@ export function Footer() {
             <p className="text-sm text-neutral-400">
               © 2025 Design by{" "}
               <a 
-                href="https://www.codeandcreed.tech" 
+                href="https://accelerator.codeandcreed.tech" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-neutral-300 hover:text-white transition-colors duration-200"

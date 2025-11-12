@@ -35,7 +35,7 @@ function BackgroundBeamsWithCollisionDemo() {
             </TextAnimate>
             {/* Code & Creed link - only visible on larger screens */}
             <a 
-              href="https://www.codeandcreed.tech" 
+              href="https://accelerator.codeandcreed.tech" 
               target="_blank" 
               rel="noopener noreferrer"
               className="relative hidden sm:inline text-xs sm:text-sm md:text-base lg:text-lg text-gray-400 hover:text-gray-300 transition-colors duration-200 group ml-2"
@@ -55,7 +55,7 @@ function BackgroundBeamsWithCollisionDemo() {
           </div>
           {/* Code & Creed link - below logo on smaller screens */}
           <a 
-            href="https://www.codeandcreed.tech" 
+            href="https://accelerator.codeandcreed.tech" 
             target="_blank" 
             rel="noopener noreferrer"
             className="relative sm:hidden block mt-1 text-xs text-gray-400 hover:text-gray-300 transition-colors duration-200 group ml-8"
