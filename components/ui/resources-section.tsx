@@ -35,10 +35,9 @@ const aiTools = [
 ];
 
 const componentLibraries = [
-  { name: "TweakCN", url: "https://tweakcn.com/", description: "Visual theme generator for shadcn/ui", featured: true },
+  { name: "21st Century Components", url: "https://21st.dev/", description: "Next-generation UI components", featured: true },
   { name: "Magic UI", url: "https://magicui.design/", description: "Beautiful React components with Tailwind", featured: true },
   { name: "Aceternity UI", url: "https://ui.aceternity.com/", description: "Modern UI components and templates", featured: true },
-  { name: "21st Century Components", url: "https://21st.dev/", description: "Next-generation UI components", featured: true },
   { name: "Kibo UI", url: "https://www.kibo-ui.com/", description: "Advanced components for shadcn/ui" },
   { name: "Motion Primitives", url: "https://motion-primitives.com/", description: "Beautiful, animated components" },
   { name: "nsUI", url: "https://nsui.irung.me/", description: "Shadcn/UI Marketing Blocks" },
@@ -228,13 +227,8 @@ export function ResourcesSection() {
             Ready to Start Building?
           </h3>
           <p className="text-lg text-neutral-300 mb-8 max-w-2xl mx-auto">
-            Begin with the theme customizer to establish your design system, then explore the Component Libraries
+            Explore the Component Libraries to find the perfect components for your project
           </p>
-          <LinkPreview url="https://tweakcn.com/">
-            <button className="inline-flex items-center px-8 py-4 bg-white/10 text-white font-semibold text-lg rounded-full hover:bg-white/20 transition-colors duration-200 hover:scale-105 transition-transform">
-              Start with TweakCN →
-            </button>
-          </LinkPreview>
         </div>
       </div>
     </div>
