@@ -64,7 +64,6 @@ const componentLibraries = [
   { name: "Blocks.so", url: "https://blocks.so/", description: "Clean, modern building blocks. Copy and paste into your apps. Works with all React frameworks" },
   { name: "ElevenLabs UI", url: "https://ui.elevenlabs.io/", description: "A collection of Open Source agent and audio components that you can customize and extend" },
   { name: "8bitcn", url: "https://www.8bitcn.com/", description: "Retro 8-bit styled components for creating nostalgic, pixel-art themed applications" },
-  { name: "Aevr UI", url: "https://ui.aevr.space/", description: "Accessible, production-ready components built on top of shadcn/ui for Next.js projects" },
   { name: "BaseCN", url: "https://basecn.dev/", description: "Foundational base components and primitives for shadcn/ui projects" },
   { name: "DiceUI", url: "https://www.diceui.com/", description: "Modern UI components with a focus on interactive and dynamic interfaces" },
   { name: "Elements", url: "https://www.tryelements.dev/", description: "Curated collection of essential UI elements and components" },
