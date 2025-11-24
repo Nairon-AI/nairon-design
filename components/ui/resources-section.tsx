@@ -42,6 +42,7 @@ const componentLibraries = [
   { name: "Motion Primitives", url: "https://motion-primitives.com/", description: "Beautiful, animated components" },
   { name: "nsUI", url: "https://nsui.irung.me/", description: "Shadcn/UI Marketing Blocks" },
   { name: "LnDev UI", url: "https://ui.lndev.me/", description: "Clean library of motion components" },
+  { name: "Square UI", url: "https://square.lndev.me/", description: "Beautifully crafted open-source layouts built with shadcn/ui" },
   { name: "MVP Blocks", url: "https://blocks.mvp-subha.me/", description: "Beautiful UI components with Tailwind" },
   { name: "Origin UI", url: "https://originui.com/", description: "Beautiful components with Tailwind" },
   { name: "Bundui", url: "https://bundui.io/", description: "Motion components, copy-paste ready" },
