@@ -250,5 +250,19 @@
     "category": "utility",
     "featured": false,
     "url": "https://www.twblocks.com/"
+  },
+  "smoothui.dev": {
+    "filename": "smooth-ui-smoothui-dev.png",
+    "name": "Smooth UI",
+    "category": "components",
+    "featured": false,
+    "url": "https://smoothui.dev/"
+  },
+  "patterncraft.fun": {
+    "filename": "patterncraft-patterncraft-fun.png",
+    "name": "PatternCraft",
+    "category": "components",
+    "featured": false,
+    "url": "https://patterncraft.fun/"
   }
 }
