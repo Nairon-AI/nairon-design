@@ -268,7 +268,7 @@
   "isocons.app": {
     "filename": "isocons-isocons-app.png",
     "name": "3D Isometric icons",
-    "category": "icons",
+    "category": "utility",
     "featured": false,
     "url": "https://www.isocons.app/"
   }

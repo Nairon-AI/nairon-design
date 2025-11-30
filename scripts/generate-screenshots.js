@@ -71,6 +71,7 @@ const allTools = [
   { name: "Nucleo", url: "https://nucleoapp.com/", category: "utility" },
   { name: "Tailwind Converter", url: "https://tailwindconverter.app/", category: "utility" },
   { name: "TwBlocks", url: "https://www.twblocks.com/", category: "utility" },
+  { name: "3D Isometric icons", url: "https://www.isocons.app/", category: "utility" },
 ];
 
 // Configuration

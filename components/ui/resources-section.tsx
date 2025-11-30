@@ -107,6 +107,7 @@ const utilityTools = [
   { name: "Nucleo", url: "https://nucleoapp.com/", description: "30,000+ premium icons and SVG library manager" },
   { name: "Tailwind Converter", url: "https://tailwindconverter.app/", description: "Convert CSS to Tailwind" },
   { name: "TwBlocks", url: "https://www.twblocks.com/", description: "React SaaS website blocks" },
+  { name: "3D Isometric icons", url: "https://www.isocons.app/", description: "3D Isometric icons" },
 ];
 
 interface ResourceCardProps {
