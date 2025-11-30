@@ -55,7 +55,7 @@ const allTools = [
   { name: "UILabs", url: "https://www.uilabs.dev/", category: "components" },
   { name: "Style UI", url: "https://www.styleui.dev/", category: "components" },
   { name: "UIVerse", url: "https://www.uiverse.io/", category: "components" },
-  { name: "Kokonut", url: "https://kokonut.dev/", category: "components" },
+  { name: "Kokonut UI", url: "https://kokonutui.com/", category: "components" },
   { name: "Luxe", url: "https://www.luxeui.com/", category: "components" },
   { name: "Catalyst", url: "https://catalyst.tailwindui.com/", category: "components" },
   { name: "HeadlessUI", url: "https://headlessui.com/", category: "components" },

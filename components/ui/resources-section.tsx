@@ -52,7 +52,6 @@ const componentLibraries = [
   { name: "UILabs", url: "https://www.uilabs.dev/", description: "Modern UI components" },
   { name: "Style UI", url: "https://www.styleui.dev/", description: "Customizable components" },
   { name: "UIVerse", url: "https://www.uiverse.io/", description: "Component marketplace" },
-  { name: "Kokonut", url: "https://kokonut.dev/", description: "Interactive components with shadcn" },
   { name: "Luxe", url: "https://www.luxeui.com/", description: "Copy-paste beautiful components" },
   { name: "Catalyst", url: "https://catalyst.tailwindui.com/", description: "Premium Tailwind CSS components" },
   { name: "HeadlessUI", url: "https://headlessui.com/", description: "Accessible UI primitives" },

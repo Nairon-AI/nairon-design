@@ -98,7 +98,7 @@ Copy this list and work through each URL:
 - UILabs: https://www.uilabs.dev/
 - Style UI: https://www.styleui.dev/
 - UIVerse: https://www.uiverse.io/
-- Kokonut: https://kokonut.dev/
+- Kokonut UI: https://kokonutui.com/
 - Luxe: https://www.luxeui.com/
 - Catalyst: https://catalyst.tailwindui.com/
 - HeadlessUI: https://headlessui.com/
