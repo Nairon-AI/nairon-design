@@ -264,5 +264,12 @@
     "category": "components",
     "featured": false,
     "url": "https://patterncraft.fun/"
+  },
+  "isocons.app": {
+    "filename": "isocons-isocons-app.png",
+    "name": "3D Isometric icons",
+    "category": "icons",
+    "featured": false,
+    "url": "https://www.isocons.app/"
   }
 }
