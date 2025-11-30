@@ -40,7 +40,7 @@ const componentLibraries = [
   { name: "Aceternity UI", url: "https://ui.aceternity.com/", description: "Modern UI components and templates", featured: true },
   { name: "Kibo UI", url: "https://www.kibo-ui.com/", description: "Advanced components for shadcn/ui" },
   { name: "Motion Primitives", url: "https://motion-primitives.com/", description: "Beautiful, animated components" },
-  { name: "Tailark", url: "https://nsui.irung.me/", description: "Shadcn/UI Marketing Blocks" },
+  { name: "Tailark", url: "https://tailark.com/", description: "Shadcn/UI Marketing Blocks" },
   { name: "LnDev UI", url: "https://ui.lndev.me/", description: "Clean library of motion components" },
   { name: "Square UI", url: "https://square.lndev.me/", description: "Beautifully crafted open-source layouts built with shadcn/ui" },
   { name: "MVP Blocks", url: "https://blocks.mvp-subha.me/", description: "Beautiful UI components with Tailwind" },

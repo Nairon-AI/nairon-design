@@ -44,7 +44,7 @@ const allTools = [
   { name: "21st Century Components", url: "https://21st.dev/", category: "components", featured: true },
   { name: "Kibo UI", url: "https://www.kibo-ui.com/", category: "components" },
   { name: "Motion Primitives", url: "https://motion-primitives.com/", category: "components" },
-  { name: "Tailark", url: "https://nsui.irung.me/", category: "components" },
+  { name: "Tailark", url: "https://tailark.com/", category: "components" },
   { name: "LnDev UI", url: "https://ui.lndev.me/", category: "components" },
   { name: "MVP Blocks", url: "https://blocks.mvp-subha.me/", category: "components" },
   { name: "Origin UI", url: "https://originui.com/", category: "components" },
