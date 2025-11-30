@@ -87,7 +87,7 @@ Copy this list and work through each URL:
 - 21st Century Components: https://21st.dev/
 - Kibo UI: https://www.kibo-ui.com/
 - Motion Primitives: https://motion-primitives.com/
-- nsUI: https://nsui.irung.me/
+- Tailark: https://nsui.irung.me/
 - LnDev UI: https://ui.lndev.me/
 - MVP Blocks: https://blocks.mvp-subha.me/
 - Origin UI: https://originui.com/
