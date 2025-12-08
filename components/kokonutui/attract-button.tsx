@@ -31,7 +31,7 @@ interface Particle {
 export default function AttractButton({
     className,
     particleCount = 12,
-    attractRadius = 50,
+    attractRadius: _attractRadius = 50,
     ...props
 }: AttractButtonProps) {
     const [isAttracting, setIsAttracting] = useState(false);

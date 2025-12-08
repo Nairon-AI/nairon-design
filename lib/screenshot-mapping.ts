@@ -35,8 +35,8 @@ export async function getScreenshotMapping(): Promise<ScreenshotMapping> {
     
     cachedMapping = await response.json();
     return cachedMapping || {};
-  } catch (error) {
-    console.warn('Failed to load screenshot mapping:', error);
+  } catch (_error) {
+    console.warn('Failed to load screenshot mapping:', _error);
     return {};
   }
 }
@@ -54,7 +54,7 @@ export function getStaticScreenshot(url: string, mapping: ScreenshotMapping): st
     }
     
     return null;
-  } catch (error) {
+  } catch (_error) {
     console.warn('Invalid URL provided to getStaticScreenshot:', url);
     return null;
   }
@@ -74,7 +74,7 @@ export function getToolInfo(url: string, mapping: ScreenshotMapping) {
   try {
     const domain = new URL(url).hostname.replace('www.', '');
     return mapping[domain] || null;
-  } catch (error) {
+  } catch (_error) {
     console.warn('Invalid URL provided to getToolInfo:', url);
     return null;
   }

@@ -36,7 +36,7 @@ export default function SocialButton({
         try {
             await navigator.clipboard.writeText(button.url);
             toast.success(`${button.label} copied to clipboard!`);
-        } catch (err) {
+        } catch {
             toast.error("Failed to copy to clipboard");
         }
         
