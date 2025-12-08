@@ -25,7 +25,7 @@ export default function SocialButton({
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     const shareButtons = [
-        { icon: Twitter, label: "Twitter link", url: "https://x.com/_7obaid_" },
+        { icon: Twitter, label: "Twitter link", url: "https://x.com/code_and_creed" },
         { icon: Link, label: "Website link", url: "https://accelerator.codeandcreed.tech/" },
     ];
 

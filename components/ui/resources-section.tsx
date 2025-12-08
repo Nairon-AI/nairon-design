@@ -118,40 +118,52 @@ interface ResourceCardProps {
 }
 
 const ResourceCard = ({ name, url, description, featured = false }: ResourceCardProps) => (
-  <LinkPreview url={url}>
+  <LinkPreview url={url} className="h-full w-full">
     <div
-      className={`block p-4 rounded-lg border transition-all duration-200 hover:scale-105 ${
-        featured
-          ? "bg-gradient-to-br from-emerald-900/20 to-green-900/20 border-emerald-700 hover:border-emerald-500"
-          : "bg-neutral-800/50 border-neutral-700 hover:border-neutral-500"
-      }`}
+      className={`group relative h-full p-5 rounded-xl border transition-all duration-300 w-full flex flex-col
+        ${
+          featured
+            ? "bg-neutral-900/60 border-emerald-500/20 hover:border-emerald-500/40 hover:bg-neutral-900/80"
+            : "bg-neutral-900/40 border-white/5 hover:border-white/10 hover:bg-neutral-900/60"
+        }
+      `}
     >
-      <h3 className={`font-semibold mb-1 flex items-center gap-2 ${featured ? "text-emerald-300" : "text-white"}`}>
-        {name} {featured && <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />}
-      </h3>
-      <p className="text-sm text-neutral-400">{description}</p>
+      <div className="flex items-center justify-between mb-3">
+        <h3 className={`font-medium transition-colors ${featured ? "text-emerald-100 group-hover:text-emerald-50" : "text-neutral-200 group-hover:text-white"}`}>
+          {name}
+        </h3>
+        {featured && <Star className="w-3.5 h-3.5 fill-emerald-500/20 text-emerald-500" />}
+      </div>
+      <p className="text-sm text-neutral-500 leading-relaxed line-clamp-2 group-hover:text-neutral-400 transition-colors">
+        {description}
+      </p>
     </div>
   </LinkPreview>
 );
 
 export function ResourcesSection() {
   return (
-    <div className="w-full py-20" style={{ backgroundColor: '#262626' }} id="timeline-section">
-      <div className="max-w-7xl mx-auto px-4">
+    <div className="w-full py-24 bg-[#0a0a0a]" id="timeline-section">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-xl text-neutral-300 max-w-3xl mx-auto">
-            Use our curated collection of tools, libraries, and resources for rapid UI prototyping
+        <div className="text-center mb-20">
+          <h2 className="text-3xl font-bold text-white mb-4 tracking-tight">Curated Resources</h2>
+          <p className="text-lg text-neutral-400 max-w-2xl mx-auto leading-relaxed">
+            A collection of tools, libraries, and resources for modern interface design.
           </p>
         </div>
 
         {/* Finding Inspiration */}
-        <section className="mb-16">
-          <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-            <Palette className="w-6 h-6" />
-            Finding Inspiration
-          </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <section className="mb-20">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="p-2 rounded-lg bg-neutral-900 border border-white/5">
+              <Palette className="w-5 h-5 text-emerald-400" />
+            </div>
+            <h3 className="text-xl font-semibold text-white tracking-tight">
+              Finding Inspiration
+            </h3>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {inspirationTools.map((tool) => (
               <ResourceCard key={tool.name} {...tool} />
             ))}
@@ -159,12 +171,16 @@ export function ResourcesSection() {
         </section>
 
         {/* Landing Page Templates */}
-        <section className="mb-16">
-          <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-            <LayoutTemplate className="w-6 h-6" />
-            Landing Page Templates
-          </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <section className="mb-20">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="p-2 rounded-lg bg-neutral-900 border border-white/5">
+              <LayoutTemplate className="w-5 h-5 text-blue-400" />
+            </div>
+            <h3 className="text-xl font-semibold text-white tracking-tight">
+              Landing Page Templates
+            </h3>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {landingPageTemplates.map((tool) => (
               <ResourceCard key={tool.name} {...tool} />
             ))}
@@ -172,12 +188,16 @@ export function ResourcesSection() {
         </section>
 
         {/* AI-Powered Design */}
-        <section className="mb-16">
-          <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-            <Cpu className="w-6 h-6" />
-            AI-Powered Design
-          </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <section className="mb-20">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="p-2 rounded-lg bg-neutral-900 border border-white/5">
+              <Cpu className="w-5 h-5 text-purple-400" />
+            </div>
+            <h3 className="text-xl font-semibold text-white tracking-tight">
+              AI-Powered Design
+            </h3>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {aiTools.map((tool) => (
               <ResourceCard key={tool.name} {...tool} />
             ))}
@@ -185,12 +205,16 @@ export function ResourcesSection() {
         </section>
 
         {/* Component Libraries */}
-        <section className="mb-16">
-          <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-            <Package className="w-6 h-6" />
-            Component Libraries
-          </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <section className="mb-20">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="p-2 rounded-lg bg-neutral-900 border border-white/5">
+              <Package className="w-5 h-5 text-orange-400" />
+            </div>
+            <h3 className="text-xl font-semibold text-white tracking-tight">
+              Component Libraries
+            </h3>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
             {componentLibraries.map((tool) => (
               <ResourceCard key={tool.name} {...tool} />
             ))}
@@ -198,12 +222,16 @@ export function ResourcesSection() {
         </section>
 
         {/* Animation Tools */}
-        <section className="mb-16">
-          <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-            <Sparkles className="w-6 h-6" />
-            Animation & Motion
-          </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <section className="mb-20">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="p-2 rounded-lg bg-neutral-900 border border-white/5">
+              <Sparkles className="w-5 h-5 text-yellow-400" />
+            </div>
+            <h3 className="text-xl font-semibold text-white tracking-tight">
+              Animation & Motion
+            </h3>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {animationTools.map((tool) => (
               <ResourceCard key={tool.name} {...tool} />
             ))}
@@ -211,12 +239,16 @@ export function ResourcesSection() {
         </section>
 
         {/* Utility Tools */}
-        <section className="mb-16">
-          <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-            <Wrench className="w-6 h-6" />
-            Utility Tools
-          </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <section className="mb-24">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="p-2 rounded-lg bg-neutral-900 border border-white/5">
+              <Wrench className="w-5 h-5 text-pink-400" />
+            </div>
+            <h3 className="text-xl font-semibold text-white tracking-tight">
+              Utility Tools
+            </h3>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {utilityTools.map((tool) => (
               <ResourceCard key={tool.name} {...tool} />
             ))}
@@ -224,13 +256,16 @@ export function ResourcesSection() {
         </section>
 
         {/* CTA Section */}
-        <div className="mt-20 text-center p-12 rounded-2xl bg-gradient-to-r from-emerald-900/20 to-green-900/20 border border-emerald-700">
-          <h3 className="text-3xl font-bold text-white mb-4">
-            Ready to Start Building?
-          </h3>
-          <p className="text-lg text-neutral-300 mb-8 max-w-2xl mx-auto">
-            Explore the Component Libraries to find the perfect components for your project
-          </p>
+        <div className="mt-20 relative overflow-hidden text-center p-12 rounded-3xl bg-neutral-900 border border-white/5">
+          <div className="absolute inset-0 bg-gradient-to-b from-emerald-500/5 to-transparent opacity-50" />
+          <div className="relative z-10">
+            <h3 className="text-3xl font-bold text-white mb-4 tracking-tight">
+              Ready to Start Building?
+            </h3>
+            <p className="text-lg text-neutral-400 mb-8 max-w-2xl mx-auto">
+              Explore the component libraries to find the perfect building blocks for your next project.
+            </p>
+          </div>
         </div>
       </div>
     </div>
