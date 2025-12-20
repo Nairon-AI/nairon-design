@@ -103,7 +103,6 @@ const animationTools = [
 
 const iconLibraries = [
   { name: "Lucide Animated", url: "https://lucide-animated.com/", description: "Open-source animated icon library built with Motion & Lucide" },
-  { name: "Animated Icons", url: "https://icons.pqoqubbw.dev/", description: "Smooth animated SVG icons" },
   { name: "Iconsax", url: "https://iconsax.dev/", description: "5912 open source SVG icons" },
   { name: "Nucleo", url: "https://nucleoapp.com/", description: "30,000+ premium icons and SVG library manager" },
   { name: "3D Isometric Icons", url: "https://www.isocons.app/", description: "3D Isometric icons" },
