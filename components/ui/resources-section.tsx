@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Palette, Cpu, Package, Sparkles, Wrench, Star, LayoutTemplate } from "lucide-react";
+import { Palette, Cpu, Package, Sparkles, Wrench, Star, LayoutTemplate, Shapes } from "lucide-react";
 import { LinkPreview } from "@/components/ui/link-preview-static";
 
 const inspirationTools = [
@@ -99,15 +99,19 @@ const animationTools = [
   { name: "Rive", url: "https://rive.app/", description: "Interactive design tool with stateful graphics format and multi-platform runtime", featured: true },
   { name: "AnimeJS", url: "https://animejs.com/", description: "JavaScript animation engine" },
   { name: "Unicorn Studio", url: "https://www.unicorn.studio/", description: "Create motion and interaction without code" },
+];
+
+const iconLibraries = [
+  { name: "Lucide Animated", url: "https://lucide-animated.com/", description: "Open-source animated icon library built with Motion & Lucide" },
   { name: "Animated Icons", url: "https://icons.pqoqubbw.dev/", description: "Smooth animated SVG icons" },
+  { name: "Iconsax", url: "https://iconsax.dev/", description: "5912 open source SVG icons" },
+  { name: "Nucleo", url: "https://nucleoapp.com/", description: "30,000+ premium icons and SVG library manager" },
+  { name: "3D Isometric Icons", url: "https://www.isocons.app/", description: "3D Isometric icons" },
 ];
 
 const utilityTools = [
-  { name: "Iconsax", url: "https://iconsax.dev/", description: "5912 open source SVG icons" },
-  { name: "Nucleo", url: "https://nucleoapp.com/", description: "30,000+ premium icons and SVG library manager" },
   { name: "Tailwind Converter", url: "https://tailwindconverter.app/", description: "Convert CSS to Tailwind" },
   { name: "TwBlocks", url: "https://www.twblocks.com/", description: "React SaaS website blocks" },
-  { name: "3D Isometric icons", url: "https://www.isocons.app/", description: "3D Isometric icons" },
 ];
 
 interface ResourceCardProps {
@@ -233,6 +237,23 @@ export function ResourcesSection() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {animationTools.map((tool) => (
+              <ResourceCard key={tool.name} {...tool} />
+            ))}
+          </div>
+        </section>
+
+        {/* Icon Libraries */}
+        <section className="mb-20">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="p-2 rounded-lg bg-neutral-900 border border-white/5">
+              <Shapes className="w-5 h-5 text-cyan-400" />
+            </div>
+            <h3 className="text-xl font-semibold text-white tracking-tight">
+              Icon Libraries
+            </h3>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {iconLibraries.map((tool) => (
               <ResourceCard key={tool.name} {...tool} />
             ))}
           </div>
