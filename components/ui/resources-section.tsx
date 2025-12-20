@@ -13,6 +13,7 @@ const inspirationTools = [
   { name: "Web Interactions", url: "https://www.webinteractions.gallery/", description: "Animated elements gallery" },
   { name: "Best Designs on X", url: "https://bestdesignsonx.com", description: "Daily curation of the best designs shared on X" },
   { name: "Mobbin", url: "https://mobbin.com/", description: "Discover real-world iOS & Web design inspiration" },
+  { name: "60fps", url: "https://60fps.design/", description: "Endless collection of delightful details from best-in-class apps" },
 ];
 
 const landingPageTemplates = [
@@ -92,13 +93,15 @@ const componentLibraries = [
   { name: "UtilCN", url: "https://utilcn.dev/", description: "Utility components and helper functions for shadcn/ui development" },
   { name: "Wandry UI", url: "https://ui.wandry.com.ua/", description: "Custom UI components with unique design aesthetics" },
   { name: "Wigggle UI", url: "https://wigggle-ui.vercel.app/", description: "Open-source collection of copy-paste widgets compatible with shadcn/ui" },
-  { name: "ZippyStarter", url: "https://zippystarter.com/", description: "Rapid starter templates and components built with shadcn/ui, Tailwind, and React" }
+  { name: "ZippyStarter", url: "https://zippystarter.com/", description: "Rapid starter templates and components built with shadcn/ui, Tailwind, and React" },
+  { name: "Divs", url: "https://divs.idreezus.com/", description: "Webflow component library for rapid development" },
 ];
 
 const animationTools = [
   { name: "Rive", url: "https://rive.app/", description: "Interactive design tool with stateful graphics format and multi-platform runtime", featured: true },
   { name: "AnimeJS", url: "https://animejs.com/", description: "JavaScript animation engine" },
   { name: "Unicorn Studio", url: "https://www.unicorn.studio/", description: "Create motion and interaction without code" },
+  { name: "Efecto", url: "https://efecto.app/", description: "CSS effects and animations collection" },
 ];
 
 const iconLibraries = [
