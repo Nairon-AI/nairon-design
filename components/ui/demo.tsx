@@ -33,12 +33,12 @@ function BackgroundBeamsWithCollisionDemo() {
             >
               Design
             </TextAnimate>
-            {/* Code & Creed link - only visible on larger screens */}
-            <a 
-              href="https://accelerator.codeandcreed.tech" 
-              target="_blank" 
+            {/* NaironAI link - only visible on larger screens */}
+            <a
+              href="https://www.naironai.com/"
+              target="_blank"
               rel="noopener noreferrer"
-              className="relative hidden sm:inline text-xs sm:text-sm md:text-base lg:text-lg text-gray-400 hover:text-gray-300 transition-colors duration-200 group ml-2"
+              className="relative hidden sm:inline-flex items-center gap-1.5 text-xs sm:text-sm md:text-base lg:text-lg text-gray-400 hover:text-gray-300 transition-colors duration-200 group ml-2"
             >
               <TextAnimate
                 animation="fadeIn"
@@ -48,17 +48,25 @@ function BackgroundBeamsWithCollisionDemo() {
                 as="span"
                 once={true}
               >
-                A product by Code & Creed ↗
+                A product by
               </TextAnimate>
+              <Image
+                src="/nairon-white.png"
+                alt="NaironAI Logo"
+                width={80}
+                height={20}
+                className="h-4 sm:h-5 md:h-6 w-auto object-contain"
+              />
+              <span className="text-gray-400">↗</span>
               <span className="absolute bottom-0 left-0 w-0 h-px bg-gray-300 transition-all duration-300 group-hover:w-full"></span>
             </a>
           </div>
-          {/* Code & Creed link - below logo on smaller screens */}
-          <a 
-            href="https://accelerator.codeandcreed.tech" 
-            target="_blank" 
+          {/* NaironAI link - below logo on smaller screens */}
+          <a
+            href="https://www.naironai.com/"
+            target="_blank"
             rel="noopener noreferrer"
-            className="relative sm:hidden block mt-1 text-xs text-gray-400 hover:text-gray-300 transition-colors duration-200 group ml-8"
+            className="relative sm:hidden flex items-center gap-1.5 mt-1 text-xs text-gray-400 hover:text-gray-300 transition-colors duration-200 group ml-8"
           >
             <TextAnimate
               animation="fadeIn"
@@ -68,8 +76,16 @@ function BackgroundBeamsWithCollisionDemo() {
               as="span"
               once={true}
             >
-              A product by Code & Creed ↗
+              A product by
             </TextAnimate>
+            <Image
+              src="/nairon-white.png"
+              alt="NaironAI Logo"
+              width={60}
+              height={15}
+              className="h-3 w-auto object-contain"
+            />
+            <span className="text-gray-400">↗</span>
             <span className="absolute bottom-0 left-0 w-0 h-px bg-gray-300 transition-all duration-300 group-hover:w-full"></span>
           </a>
         </div>
