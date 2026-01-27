@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import SocialButton from "@/components/kokonutui/social-button";
 
 export function Footer() {
@@ -9,18 +10,24 @@ export function Footer() {
         <div className="flex flex-col items-center justify-center gap-6">
           {/* Social Button */}
           <SocialButton />
-          
+
           {/* Simple Copyright */}
           <div className="text-center">
-            <p className="text-sm text-neutral-400">
+            <p className="text-sm text-neutral-400 flex items-center justify-center gap-1.5">
               © 2025 Design by{" "}
-              <a 
-                href="https://accelerator.codeandcreed.tech" 
-                target="_blank" 
+              <a
+                href="https://www.naironai.com/"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="text-neutral-300 hover:text-white transition-colors duration-200"
+                className="inline-flex items-center text-neutral-300 hover:text-white transition-colors duration-200"
               >
-                Code & Creed
+                <Image
+                  src="/nairon-white.png"
+                  alt="NaironAI"
+                  width={70}
+                  height={18}
+                  className="h-4 w-auto object-contain"
+                />
               </a>
             </p>
           </div>
