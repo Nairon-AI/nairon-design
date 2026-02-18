@@ -6,6 +6,7 @@ import { SparklesText } from "@/components/ui/sparkles-text";
 import { TextAnimate } from "@/components/magicui/text-animate";
 import AttractButton from "@/components/kokonutui/attract-button";
 import { motion } from "framer-motion";
+import { PhysicsToastLab } from "@/components/ui/physics-toast-lab";
 
 function BackgroundBeamsWithCollisionDemo() {
   return (
@@ -175,6 +176,14 @@ function BackgroundBeamsWithCollisionDemo() {
             attractRadius={60}
           />
         </motion.div>
+      </div>
+
+      <div className="absolute right-6 top-1/2 -translate-y-1/2 hidden xl:block z-30">
+        <PhysicsToastLab />
+      </div>
+
+      <div className="block xl:hidden px-4 mt-10">
+        <PhysicsToastLab />
       </div>
     </BackgroundBeamsWithCollision>
   );
