@@ -176,6 +176,7 @@ function BackgroundBeamsWithCollisionDemo() {
           />
         </motion.div>
       </div>
+
     </BackgroundBeamsWithCollision>
   );
 }
