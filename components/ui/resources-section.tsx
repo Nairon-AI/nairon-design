@@ -95,6 +95,9 @@ const componentLibraries = [
   { name: "Wigggle UI", url: "https://wigggle-ui.vercel.app/", description: "Open-source collection of copy-paste widgets compatible with shadcn/ui" },
   { name: "ZippyStarter", url: "https://zippystarter.com/", description: "Rapid starter templates and components built with shadcn/ui, Tailwind, and React" },
   { name: "Divs", url: "https://divs.idreezus.com/", description: "Webflow component library for rapid development" },
+  { name: "CoverFlow", url: "https://coverflow.ashishgogula.in/", description: "iOS-like Cover Flow for React. Fluid, physical motion with zero layout shifts" },
+  { name: "Componentry", url: "https://www.componentry.fun/", description: "Refined, animated React primitives for premium product UI" },
+  { name: "Code Blocks", url: "https://code-blocks.pheralb.dev/", description: "Beautiful code block components and utilities to show your snippets beautifully" },
 ];
 
 const animationTools = [
@@ -103,6 +106,7 @@ const animationTools = [
   { name: "AnimeJS", url: "https://animejs.com/", description: "JavaScript animation engine" },
   { name: "Unicorn Studio", url: "https://www.unicorn.studio/", description: "Create motion and interaction without code" },
   { name: "Efecto", url: "https://efecto.app/", description: "CSS effects and animations collection" },
+  { name: "Torph", url: "https://torph.lochie.me/", description: "Fluid text morphing components with smooth transitions" },
 ];
 
 const iconLibraries = [
@@ -115,6 +119,7 @@ const iconLibraries = [
 const utilityTools = [
   { name: "Tailwind Converter", url: "https://tailwindconverter.app/", description: "Convert CSS to Tailwind" },
   { name: "TwBlocks", url: "https://www.twblocks.com/", description: "React SaaS website blocks" },
+  { name: "SoundCN", url: "https://www.soundcn.xyz/", description: "703+ curated UI sounds for web and mobile applications" },
 ];
 
 interface ResourceCardProps {
