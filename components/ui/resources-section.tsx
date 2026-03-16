@@ -98,6 +98,7 @@ const componentLibraries = [
   { name: "CoverFlow", url: "https://coverflow.ashishgogula.in/", description: "iOS-like Cover Flow for React. Fluid, physical motion with zero layout shifts" },
   { name: "Componentry", url: "https://www.componentry.fun/", description: "Refined, animated React primitives for premium product UI" },
   { name: "Code Blocks", url: "https://code-blocks.pheralb.dev/", description: "Beautiful code block components and utilities to show your snippets beautifully" },
+  { name: "MapCN", url: "https://www.mapcn.dev/blocks", description: "Beautifully crafted map examples for React apps — drop in, customize, and ship" },
 ];
 
 const animationTools = [
