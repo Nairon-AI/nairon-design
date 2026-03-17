@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Palette, Cpu, Package, Sparkles, Wrench, Star, LayoutTemplate, Shapes } from "lucide-react";
+import { Palette, Cpu, Package, Sparkles, Wrench, Star, LayoutTemplate, Shapes, PenTool } from "lucide-react";
 import { LinkPreview } from "@/components/ui/link-preview-static";
 
 const inspirationTools = [
@@ -33,6 +33,14 @@ const aiTools = [
   { name: "SuperDesign", url: "http://superdesign.dev/", description: "Generate 10 designs in parallel for rapid exploration", featured: true },
   { name: "Onlook", url: "https://onlook.com/", description: "Visual React editor - 'Cursor for Designers'", featured: true },
   { name: "Aura", url: "https://aura.build/", description: "Generate designs in seconds and export to HTML or Figma.", featured: true },
+];
+
+const designEngineering = [
+  { name: "Desengs", url: "https://desengs.com/", description: "The ultimate resource for design engineers", featured: true },
+  { name: "Animations.dev", url: "https://animations.dev/", description: "Learn the theory and practice behind great animations" },
+  { name: "SVG Guide", url: "https://www.svg.guide/", description: "Interactive SVG animations course" },
+  { name: "Devouring Details", url: "https://devouringdetails.com/", description: "Interactive reference manual for interaction-curious designers" },
+  { name: "Interface Craft", url: "https://www.interfacecraft.dev/", description: "A working library for those committed to designing with uncommon care" },
 ];
 
 const componentLibraries = [
@@ -212,6 +220,23 @@ export function ResourcesSection() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {aiTools.map((tool) => (
+              <ResourceCard key={tool.name} {...tool} />
+            ))}
+          </div>
+        </section>
+
+        {/* Design Engineering */}
+        <section className="mb-20">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="p-2 rounded-lg bg-neutral-900 border border-white/5">
+              <PenTool className="w-5 h-5 text-rose-400" />
+            </div>
+            <h3 className="text-xl font-semibold text-white tracking-tight">
+              Design Engineering
+            </h3>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {designEngineering.map((tool) => (
               <ResourceCard key={tool.name} {...tool} />
             ))}
           </div>
