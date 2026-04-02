@@ -53,6 +53,7 @@ const componentLibraries = [
   { name: "LnDev UI", url: "https://ui.lndev.me/", description: "Clean library of motion components" },
   { name: "Square UI", url: "https://square.lndev.me/", description: "Beautifully crafted open-source layouts built with shadcn/ui" },
   { name: "MVP Blocks", url: "https://blocks.mvp-subha.me/", description: "Beautiful UI components with Tailwind" },
+  { name: "Efferd App Shells", url: "https://efferd.com/blocks/app-shell", description: "Shadcn app shell blocks with ready-made sidebars, navbars, and dashboard scaffolds", featured: true },
   { name: "Origin UI", url: "https://originui.com/", description: "Beautiful components with Tailwind" },
   { name: "Bundui", url: "https://bundui.io/", description: "Motion components, copy-paste ready" },
   { name: "Jakub Krehel", url: "https://jakub.kr/", description: "Design Engineer with a passion for building beautiful components" },
