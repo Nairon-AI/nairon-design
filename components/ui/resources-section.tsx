@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Palette, Cpu, Package, Sparkles, Wrench, Star, LayoutTemplate, Shapes, PenTool } from "lucide-react";
+import { Palette, Cpu, Package, Sparkles, Wrench, Star, LayoutTemplate, Shapes, PenTool, UserRound } from "lucide-react";
 import { LinkPreview } from "@/components/ui/link-preview-static";
 
 const inspirationTools = [
@@ -43,6 +43,20 @@ const designEngineering = [
   { name: "Interface Craft", url: "https://www.interfacecraft.dev/", description: "A working library for those committed to designing with uncommon care" },
 ];
 
+const designEngineerPortfolios = [
+  {
+    name: "Chanh Dai",
+    url: "https://chanhdai.com/",
+    description: "Open-source design engineer portfolio with a polished personal site, shadcn registry, and blog built around pixel-perfect front-end craft.",
+    featured: true,
+  },
+  {
+    name: "Jakub Krehel",
+    url: "https://jakub.kr/",
+    description: "Design engineer portfolio mixing interaction experiments, thoughtful essays, and a strong point of view on making interfaces feel better.",
+  },
+];
+
 const componentLibraries = [
   { name: "21st Century Components", url: "https://21st.dev/", description: "Next-generation UI components", featured: true },
   { name: "Magic UI", url: "https://magicui.design/", description: "Beautiful React components with Tailwind", featured: true },
@@ -56,7 +70,6 @@ const componentLibraries = [
   { name: "Efferd App Shells", url: "https://efferd.com/blocks/app-shell", description: "Shadcn app shell blocks with ready-made sidebars, navbars, and dashboard scaffolds", featured: true },
   { name: "Origin UI", url: "https://originui.com/", description: "Beautiful components with Tailwind" },
   { name: "Bundui", url: "https://bundui.io/", description: "Motion components, copy-paste ready" },
-  { name: "Jakub Krehel", url: "https://jakub.kr/", description: "Design Engineer with a passion for building beautiful components" },
   { name: "Fancy Components", url: "https://www.fancycomponents.dev/", description: "Fun components for micro-interactions" },
   { name: "Prism UI", url: "https://www.prismui.tech/", description: "Customizable library on shadcn/ui" },
   { name: "UILabs", url: "https://www.uilabs.dev/", description: "Modern UI components" },
@@ -238,6 +251,23 @@ export function ResourcesSection() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {designEngineering.map((tool) => (
+              <ResourceCard key={tool.name} {...tool} />
+            ))}
+          </div>
+        </section>
+
+        {/* Design Engineer Portfolios */}
+        <section className="mb-20">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="p-2 rounded-lg bg-neutral-900 border border-white/5">
+              <UserRound className="w-5 h-5 text-teal-400" />
+            </div>
+            <h3 className="text-xl font-semibold text-white tracking-tight">
+              Design Engineer portfolios
+            </h3>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {designEngineerPortfolios.map((tool) => (
               <ResourceCard key={tool.name} {...tool} />
             ))}
           </div>
