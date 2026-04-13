@@ -127,6 +127,7 @@ const animationTools = [
   { name: "Sileo", url: "https://sileo.aaryan.design/", description: "Opinionated physics-based toast library with SVG filters and frame-friendly motion optimization.", featured: true },
   { name: "Rive", url: "https://rive.app/", description: "Interactive design tool with stateful graphics format and multi-platform runtime", featured: true },
   { name: "AnimeJS", url: "https://animejs.com/", description: "JavaScript animation engine" },
+  { name: "Tegaki", url: "https://github.com/KurtGokhan/tegaki", description: "Handwriting animation for any font with support for React, Vue, Svelte, Astro, and Web Components" },
   { name: "Unicorn Studio", url: "https://www.unicorn.studio/", description: "Create motion and interaction without code" },
   { name: "Efecto", url: "https://efecto.app/", description: "CSS effects and animations collection" },
   { name: "Torph", url: "https://torph.lochie.me/", description: "Fluid text morphing components with smooth transitions" },
