@@ -29,6 +29,7 @@ const landingPageTemplates = [
 ];
 
 const aiTools = [
+  { name: "Neuform", url: "https://neuform.ai/", description: "400+ free AI HTML templates with reusable design systems and DESIGN.md source for Claude Design.", featured: true },
   { name: "v0", url: "https://v0.dev", description: "AI-powered UI generation with professional polish", featured: true },
   { name: "SuperDesign", url: "http://superdesign.dev/", description: "Generate 10 designs in parallel for rapid exploration", featured: true },
   { name: "Onlook", url: "https://onlook.com/", description: "Visual React editor - 'Cursor for Designers'", featured: true },
