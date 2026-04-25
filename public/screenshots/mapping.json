@@ -209,6 +209,13 @@
     "featured": true,
     "url": "https://rive.app/"
   },
+  "loading-ui.com": {
+    "filename": "loading-ui-loading-ui-com.png",
+    "name": "Loading UI",
+    "category": "animation",
+    "featured": true,
+    "url": "https://loading-ui.com/"
+  },
   "animejs.com": {
     "filename": "animejs-animejs-com.png",
     "name": "AnimeJS",
