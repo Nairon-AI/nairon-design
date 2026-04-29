@@ -126,6 +126,7 @@ const componentLibraries = [
 
 const animationTools = [
   { name: "Sileo", url: "https://sileo.aaryan.design/", description: "Opinionated physics-based toast library with SVG filters and frame-friendly motion optimization.", featured: true },
+  { name: "Transitions.dev", url: "https://transitions.dev/", description: "Copy-paste transition patterns for web app states, cards, numbers, menus, modals, and badges.", featured: true },
   { name: "Loading UI", url: "https://loading-ui.com/", description: "Open-source collection of spinners, loaders, and loading-state animations.", featured: true },
   { name: "Rive", url: "https://rive.app/", description: "Interactive design tool with stateful graphics format and multi-platform runtime", featured: true },
   { name: "AnimeJS", url: "https://animejs.com/", description: "JavaScript animation engine" },

@@ -216,6 +216,13 @@
     "featured": true,
     "url": "https://loading-ui.com/"
   },
+  "transitions.dev": {
+    "filename": "transitions-dev.png",
+    "name": "Transitions.dev",
+    "category": "animation",
+    "featured": true,
+    "url": "https://transitions.dev/"
+  },
   "animejs.com": {
     "filename": "animejs-animejs-com.png",
     "name": "AnimeJS",
