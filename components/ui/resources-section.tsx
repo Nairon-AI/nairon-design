@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Palette, Cpu, Package, Sparkles, Wrench, Star, LayoutTemplate, Shapes, PenTool, UserRound } from "lucide-react";
+import { Palette, Cpu, Package, Sparkles, Wrench, Star, LayoutTemplate, Shapes, PenTool, UserRound, Download } from "lucide-react";
 import { LinkPreview } from "@/components/ui/link-preview-static";
 
 const inspirationTools = [
@@ -34,6 +34,10 @@ const aiTools = [
   { name: "SuperDesign", url: "http://superdesign.dev/", description: "Generate 10 designs in parallel for rapid exploration", featured: true },
   { name: "Onlook", url: "https://onlook.com/", description: "Visual React editor - 'Cursor for Designers'", featured: true },
   { name: "Aura", url: "https://aura.build/", description: "Generate designs in seconds and export to HTML or Figma.", featured: true },
+];
+
+const installDesignSystemTools = [
+  { name: "DESIGN.md Directory", url: "https://designdotmd.directory/", description: "Browse, preview, and install DESIGN.md files that coding agents can read and apply.", featured: true },
 ];
 
 const designEngineering = [
@@ -238,6 +242,23 @@ export function ResourcesSection() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {aiTools.map((tool) => (
+              <ResourceCard key={tool.name} {...tool} />
+            ))}
+          </div>
+        </section>
+
+        {/* Install a Design System */}
+        <section className="mb-20">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="p-2 rounded-lg bg-neutral-900 border border-white/5">
+              <Download className="w-5 h-5 text-emerald-400" />
+            </div>
+            <h3 className="text-xl font-semibold text-white tracking-tight">
+              Install a Design System
+            </h3>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {installDesignSystemTools.map((tool) => (
               <ResourceCard key={tool.name} {...tool} />
             ))}
           </div>
