@@ -55,6 +55,13 @@
     "featured": true,
     "url": "https://v0.dev"
   },
+  "designdotmd.directory": {
+    "filename": "designdotmd-directory.png",
+    "name": "DESIGN.md Directory",
+    "category": "design-system",
+    "featured": true,
+    "url": "https://designdotmd.directory/"
+  },
   "tweakcn.com": {
     "filename": "tweakcn-tweakcn-com.png",
     "name": "TweakCN",
