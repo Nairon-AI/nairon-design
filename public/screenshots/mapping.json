@@ -90,6 +90,13 @@
     "featured": true,
     "url": "https://21st.dev/"
   },
+  "ui.watermelon.sh": {
+    "filename": "watermelon-ui-ui-watermelon-sh.png",
+    "name": "Watermelon UI",
+    "category": "components",
+    "featured": true,
+    "url": "https://ui.watermelon.sh/"
+  },
   "kibo-ui.com": {
     "filename": "kibo-ui-kibo-ui-com.png",
     "name": "Kibo UI",

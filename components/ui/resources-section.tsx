@@ -64,6 +64,7 @@ const designEngineerPortfolios = [
 
 const componentLibraries = [
   { name: "21st Century Components", url: "https://21st.dev/", description: "Next-generation UI components", featured: true },
+  { name: "Watermelon UI", url: "https://ui.watermelon.sh/", description: "High-quality React components registry with production-ready UI systems, dashboards, and blocks.", featured: true },
   { name: "Magic UI", url: "https://magicui.design/", description: "Beautiful React components with Tailwind", featured: true },
   { name: "Aceternity UI", url: "https://ui.aceternity.com/", description: "Modern UI components and templates", featured: true },
   { name: "Kibo UI", url: "https://www.kibo-ui.com/", description: "Advanced components for shadcn/ui" },
