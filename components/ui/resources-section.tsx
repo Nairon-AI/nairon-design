@@ -4,6 +4,11 @@ import { Palette, Cpu, Package, Sparkles, Wrench, Star, LayoutTemplate, Shapes, 
 import { LinkPreview } from "@/components/ui/link-preview-static";
 
 const inspirationTools = [
+  { name: "Curated Design", url: "https://curated.design/", description: "Web design inspiration catalog" },
+  { name: "Landing Love", url: "https://landing.love/", description: "Curated landing page inspiration" },
+  { name: "SaaSpo", url: "https://saaspo.com/", description: "SaaS website inspiration" },
+  { name: "Navbar Gallery", url: "https://navbar.gallery/", description: "Navigation bar design inspiration" },
+  { name: "CTA Gallery", url: "https://cta.gallery/", description: "Call-to-action section examples" },
   { name: "Layers", url: "https://layers.to/", description: "UI design inspiration gallery" },
   { name: "UnCoverLabs", url: "https://uncoverlab.co/?aff=Z2vd4", description: "Figma website templates and user journeys" },
   { name: "Dribbble", url: "https://dribbble.com/", description: "Discover world-class design inspiration" },
@@ -13,6 +18,9 @@ const inspirationTools = [
   { name: "Web Interactions", url: "https://www.webinteractions.gallery/", description: "Animated elements gallery" },
   { name: "Best Designs on X", url: "https://bestdesignsonx.com", description: "Daily curation of the best designs shared on X" },
   { name: "Mobbin", url: "https://mobbin.com/", description: "Discover real-world iOS & Web design inspiration" },
+  { name: "Rebrand", url: "https://rebrand.gallery/", description: "Brand identity inspiration gallery" },
+  { name: "Hugeicons", url: "https://hugeicons.com/?via=Abraham", description: "Icon library and icon design inspiration" },
+  { name: "Component Gallery", url: "https://component.gallery/", description: "Design system component references" },
   { name: "60fps", url: "https://60fps.design/", description: "Endless collection of delightful details from best-in-class apps" },
 ];
 
