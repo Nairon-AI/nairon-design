@@ -64,6 +64,12 @@ const designEngineerPortfolios = [
     featured: true,
   },
   {
+    name: "Harsh Singh",
+    url: "https://www.harshsingh.me/",
+    description: "Software engineer and designer sharing polished product experiments, interface work, and design studio craft.",
+    featured: true,
+  },
+  {
     name: "Jakub Krehel",
     url: "https://jakub.kr/",
     description: "Design engineer portfolio mixing interaction experiments, thoughtful essays, and a strong point of view on making interfaces feel better.",
