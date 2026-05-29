@@ -62,6 +62,7 @@ const allTools = [
 
   // Animation Tools
   { name: "Rive", url: "https://rive.app/", category: "animation", featured: true },
+  { name: "Loaders.wtf", url: "https://www.loaders.wtf/", category: "animation", featured: true },
   { name: "AnimeJS", url: "https://animejs.com/", category: "animation" },
   { name: "Unicorn Studio", url: "https://www.unicorn.studio/", category: "animation" },
   { name: "Animated Icons", url: "https://icons.pqoqubbw.dev/", category: "animation" },

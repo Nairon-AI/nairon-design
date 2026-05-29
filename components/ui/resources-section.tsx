@@ -148,6 +148,7 @@ const animationTools = [
   { name: "Transitions.dev", url: "https://transitions.dev/", description: "Copy-paste transition patterns for web app states, cards, numbers, menus, modals, and badges.", featured: true },
   { name: "glimm", url: "https://glimm.dev/", description: "React and Next.js library for shader-driven route or state transitions with a GPU-composited WebGL sweep, under 10 KB with zero performance impact.", featured: true },
   { name: "Loading UI", url: "https://loading-ui.com/", description: "Open-source collection of spinners, loaders, and loading-state animations.", featured: true },
+  { name: "Loaders.wtf", url: "https://www.loaders.wtf/", description: "Open-source loader builder for crafting expressive, configurable loading states.", featured: true },
   { name: "Rive", url: "https://rive.app/", description: "Interactive design tool with stateful graphics format and multi-platform runtime", featured: true },
   { name: "AnimeJS", url: "https://animejs.com/", description: "JavaScript animation engine" },
   { name: "Tegaki", url: "https://github.com/KurtGokhan/tegaki", description: "Handwriting animation for any font with support for React, Vue, Svelte, Astro, and Web Components" },

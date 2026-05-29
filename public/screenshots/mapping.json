@@ -237,6 +237,13 @@
     "featured": true,
     "url": "https://loading-ui.com/"
   },
+  "loaders.wtf": {
+    "filename": "loaders-wtf-loaders-wtf.png",
+    "name": "Loaders.wtf",
+    "category": "animation",
+    "featured": true,
+    "url": "https://www.loaders.wtf/"
+  },
   "transitions.dev": {
     "filename": "transitions-dev.png",
     "name": "Transitions.dev",
