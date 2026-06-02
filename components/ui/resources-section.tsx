@@ -144,6 +144,13 @@ const componentLibraries = [
 ];
 
 const animationTools = [
+  {
+    name: "super-hover",
+    url: "https://www.npmjs.com/package/super-hover",
+    description: "Tiny utility library that keeps hover state accurate while the page scrolls or elements move.",
+    featured: true,
+    previewImageSrc: "/screenshots/super-hover-tweet.png",
+  },
   { name: "Sileo", url: "https://sileo.aaryan.design/", description: "Opinionated physics-based toast library with SVG filters and frame-friendly motion optimization.", featured: true },
   { name: "Transitions.dev", url: "https://transitions.dev/", description: "Copy-paste transition patterns for web app states, cards, numbers, menus, modals, and badges.", featured: true },
   { name: "glimm", url: "https://glimm.dev/", description: "React and Next.js library for shader-driven route or state transitions with a GPU-composited WebGL sweep, under 10 KB with zero performance impact.", featured: true },
@@ -175,10 +182,11 @@ interface ResourceCardProps {
   url: string;
   description: string;
   featured?: boolean;
+  previewImageSrc?: string;
 }
 
-const ResourceCard = ({ name, url, description, featured = false }: ResourceCardProps) => (
-  <LinkPreview url={url} className="h-full w-full">
+const ResourceCard = ({ name, url, description, featured = false, previewImageSrc }: ResourceCardProps) => {
+  const cardContent = (
     <div
       className={`group relative h-full p-5 rounded-xl border transition-all duration-300 w-full flex flex-col
         ${
@@ -198,8 +206,22 @@ const ResourceCard = ({ name, url, description, featured = false }: ResourceCard
         {description}
       </p>
     </div>
-  </LinkPreview>
-);
+  );
+
+  if (previewImageSrc) {
+    return (
+      <LinkPreview url={url} className="h-full w-full" isStatic imageSrc={previewImageSrc}>
+        {cardContent}
+      </LinkPreview>
+    );
+  }
+
+  return (
+    <LinkPreview url={url} className="h-full w-full">
+      {cardContent}
+    </LinkPreview>
+  );
+};
 
 export function ResourcesSection() {
   return (
