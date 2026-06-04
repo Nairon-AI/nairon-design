@@ -6,6 +6,13 @@
     "featured": false,
     "url": "https://layers.to/"
   },
+  "collectui.com": {
+    "filename": "collect-ui-collectui-com.png",
+    "name": "Collect UI",
+    "category": "inspiration",
+    "featured": false,
+    "url": "https://collectui.com/"
+  },
   "uncoverlab.co": {
     "filename": "uncoverlabs-uncoverlab-co.png",
     "name": "UnCoverLabs",
@@ -278,6 +285,13 @@
     "category": "utility",
     "featured": false,
     "url": "https://iconsax.dev/"
+  },
+  "bnbicons.com": {
+    "filename": "bnbicons-bnbicons-com.png",
+    "name": "BnbIcons",
+    "category": "utility",
+    "featured": false,
+    "url": "https://bnbicons.com/"
   },
   "tailwindconverter.app": {
     "filename": "tailwind-converter-tailwindconverter-app.png",

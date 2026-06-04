@@ -5,6 +5,7 @@ import { LinkPreview } from "@/components/ui/link-preview-static";
 
 const inspirationTools = [
   { name: "Curated Design", url: "https://curated.design/", description: "Web design inspiration catalog" },
+  { name: "Collect UI", url: "https://collectui.com/", description: "Daily user interface inspiration curated by design makers" },
   { name: "Landing Love", url: "https://landing.love/", description: "Curated landing page inspiration" },
   { name: "SaaSpo", url: "https://saaspo.com/", description: "SaaS website inspiration" },
   { name: "Navbar Gallery", url: "https://navbar.gallery/", description: "Navigation bar design inspiration" },
@@ -167,6 +168,7 @@ const animationTools = [
 const iconLibraries = [
   { name: "Lucide Animated", url: "https://lucide-animated.com/", description: "Open-source animated icon library built with Motion & Lucide" },
   { name: "Iconsax", url: "https://iconsax.dev/", description: "5912 open source SVG icons" },
+  { name: "BnbIcons", url: "https://bnbicons.com/", description: "Airbnb-style isometric icon generator and icon browser" },
   { name: "Nucleo", url: "https://nucleoapp.com/", description: "30,000+ premium icons and SVG library manager" },
   { name: "3D Isometric Icons", url: "https://www.isocons.app/", description: "3D Isometric icons" },
 ];
