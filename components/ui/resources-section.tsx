@@ -47,6 +47,7 @@ const aiTools = [
 
 const installDesignSystemTools = [
   { name: "DESIGN.md Directory", url: "https://designdotmd.directory/", description: "Browse, preview, and install DESIGN.md files that coding agents can read and apply.", featured: true },
+  { name: "Dialectcn", url: "https://dialectcn.xyz/", description: "Brand-inspired shadcn presets with copy-ready palettes and typography.", featured: true, previewImageSrc: "/screenshots/dialectcn-dialectcn-xyz.png" },
 ];
 
 const designEngineering = [
@@ -78,6 +79,7 @@ const designEngineerPortfolios = [
 ];
 
 const componentLibraries = [
+  { name: "Remocn", url: "https://www.remocn.dev/", description: "Copy-paste Remotion components, transitions, and animated backgrounds for shadcn projects.", featured: true, previewImageSrc: "/screenshots/remocn-remocn-dev.png" },
   { name: "21st Century Components", url: "https://21st.dev/", description: "Next-generation UI components", featured: true },
   { name: "Watermelon UI", url: "https://ui.watermelon.sh/", description: "High-quality React components registry with production-ready UI systems, dashboards, and blocks.", featured: true },
   { name: "Magic UI", url: "https://magicui.design/", description: "Beautiful React components with Tailwind", featured: true },
@@ -130,7 +132,6 @@ const componentLibraries = [
   { name: "Shadcn Editor", url: "https://shadcn-editor.vercel.app/", description: "Rich text editor and content editing components for shadcn/ui" },
   { name: "ShadcnUI Blocks", url: "https://shadcnui-blocks.com/", description: "Comprehensive collection of copy-paste blocks for shadcn/ui" },
   { name: "Spectrum UI", url: "https://ui.spectrumhq.in/", description: "Wide spectrum of components covering diverse use cases and styles" },
-  { name: "Tailark", url: "https://tailark.com/", description: "Modern, responsive UI blocks specifically designed for marketing websites" },
   { name: "PatternCraft", url: "https://patterncraft.fun/", description: "Professional-grade background patterns and gradients. Easily copy the code and seamlessly integrate it into your projects. Crafted with modern CSS and Tailwind" },
   { name: "Taki UI", url: "https://taki-ui.com/", description: "Accessible components combining React Aria with shadcn design tokens" },
   { name: "UtilCN", url: "https://utilcn.dev/", description: "Utility components and helper functions for shadcn/ui development" },
@@ -176,7 +177,8 @@ const iconLibraries = [
 const utilityTools = [
   { name: "Tailwind Converter", url: "https://tailwindconverter.app/", description: "Convert CSS to Tailwind" },
   { name: "TwBlocks", url: "https://www.twblocks.com/", description: "React SaaS website blocks" },
-  { name: "SoundCN", url: "https://www.soundcn.xyz/", description: "703+ curated UI sounds for web and mobile applications" },
+  { name: "Fonttrio", url: "https://www.fonttrio.xyz/", description: "Font pairing tool with one-command setup for polished type systems", previewImageSrc: "/screenshots/fonttrio-fonttrio-xyz.png" },
+  { name: "SoundCN", url: "https://soundcn.xyz/", description: "Copy-paste UI sound effects for web and mobile applications", previewImageSrc: "/screenshots/soundcn-soundcn-xyz.png" },
 ];
 
 interface ResourceCardProps {
@@ -249,7 +251,7 @@ export function ResourcesSection() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {inspirationTools.map((tool) => (
-              <ResourceCard key={tool.name} {...tool} />
+              <ResourceCard key={`${tool.name}-${tool.url}`} {...tool} />
             ))}
           </div>
         </section>
@@ -266,7 +268,7 @@ export function ResourcesSection() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {landingPageTemplates.map((tool) => (
-              <ResourceCard key={tool.name} {...tool} />
+              <ResourceCard key={`${tool.name}-${tool.url}`} {...tool} />
             ))}
           </div>
         </section>
@@ -283,7 +285,7 @@ export function ResourcesSection() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {aiTools.map((tool) => (
-              <ResourceCard key={tool.name} {...tool} />
+              <ResourceCard key={`${tool.name}-${tool.url}`} {...tool} />
             ))}
           </div>
         </section>
@@ -300,7 +302,7 @@ export function ResourcesSection() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {installDesignSystemTools.map((tool) => (
-              <ResourceCard key={tool.name} {...tool} />
+              <ResourceCard key={`${tool.name}-${tool.url}`} {...tool} />
             ))}
           </div>
         </section>
@@ -317,7 +319,7 @@ export function ResourcesSection() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {designEngineering.map((tool) => (
-              <ResourceCard key={tool.name} {...tool} />
+              <ResourceCard key={`${tool.name}-${tool.url}`} {...tool} />
             ))}
           </div>
         </section>
@@ -334,7 +336,7 @@ export function ResourcesSection() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {designEngineerPortfolios.map((tool) => (
-              <ResourceCard key={tool.name} {...tool} />
+              <ResourceCard key={`${tool.name}-${tool.url}`} {...tool} />
             ))}
           </div>
         </section>
@@ -351,7 +353,7 @@ export function ResourcesSection() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
             {componentLibraries.map((tool) => (
-              <ResourceCard key={tool.name} {...tool} />
+              <ResourceCard key={`${tool.name}-${tool.url}`} {...tool} />
             ))}
           </div>
         </section>
@@ -368,7 +370,7 @@ export function ResourcesSection() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {animationTools.map((tool) => (
-              <ResourceCard key={tool.name} {...tool} />
+              <ResourceCard key={`${tool.name}-${tool.url}`} {...tool} />
             ))}
           </div>
         </section>
@@ -385,7 +387,7 @@ export function ResourcesSection() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {iconLibraries.map((tool) => (
-              <ResourceCard key={tool.name} {...tool} />
+              <ResourceCard key={`${tool.name}-${tool.url}`} {...tool} />
             ))}
           </div>
         </section>
@@ -402,7 +404,7 @@ export function ResourcesSection() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {utilityTools.map((tool) => (
-              <ResourceCard key={tool.name} {...tool} />
+              <ResourceCard key={`${tool.name}-${tool.url}`} {...tool} />
             ))}
           </div>
         </section>

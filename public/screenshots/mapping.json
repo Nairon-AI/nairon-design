@@ -69,6 +69,13 @@
     "featured": true,
     "url": "https://designdotmd.directory/"
   },
+  "dialectcn.xyz": {
+    "filename": "dialectcn-dialectcn-xyz.png",
+    "name": "Dialectcn",
+    "category": "design-system",
+    "featured": true,
+    "url": "https://dialectcn.xyz/"
+  },
   "harshsingh.me": {
     "filename": "harsh-singh-harshsingh-me.png",
     "name": "Harsh Singh",
@@ -230,6 +237,13 @@
     "featured": false,
     "url": "https://headlessui.com/"
   },
+  "remocn.dev": {
+    "filename": "remocn-remocn-dev.png",
+    "name": "Remocn",
+    "category": "components",
+    "featured": true,
+    "url": "https://www.remocn.dev/"
+  },
   "rive.app": {
     "filename": "rive-rive-app.png",
     "name": "Rive",
@@ -306,6 +320,20 @@
     "category": "utility",
     "featured": false,
     "url": "https://www.twblocks.com/"
+  },
+  "fonttrio.xyz": {
+    "filename": "fonttrio-fonttrio-xyz.png",
+    "name": "Fonttrio",
+    "category": "utility",
+    "featured": false,
+    "url": "https://www.fonttrio.xyz/"
+  },
+  "soundcn.xyz": {
+    "filename": "soundcn-soundcn-xyz.png",
+    "name": "SoundCN",
+    "category": "utility",
+    "featured": false,
+    "url": "https://soundcn.xyz/"
   },
   "smoothui.dev": {
     "filename": "smooth-ui-smoothui-dev.png",
