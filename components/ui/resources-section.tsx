@@ -79,6 +79,7 @@ const designEngineerPortfolios = [
 ];
 
 const componentLibraries = [
+  { name: "Fluid Functionalism", url: "https://www.fluidfunctionalism.com/", description: "Refined UI components with satisfying hover states and polished interaction details.", featured: true, previewImageSrc: "/screenshots/fluid-functionalism.png" },
   { name: "Remocn", url: "https://www.remocn.dev/", description: "Copy-paste Remotion components, transitions, and animated backgrounds for shadcn projects.", featured: true, previewImageSrc: "/screenshots/remocn-remocn-dev.png" },
   { name: "21st Century Components", url: "https://21st.dev/", description: "Next-generation UI components", featured: true },
   { name: "Watermelon UI", url: "https://ui.watermelon.sh/", description: "High-quality React components registry with production-ready UI systems, dashboards, and blocks.", featured: true },
