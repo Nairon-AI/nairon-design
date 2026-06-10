@@ -76,6 +76,13 @@
     "featured": true,
     "url": "https://dialectcn.xyz/"
   },
+  "blockus.lndevui.com": {
+    "filename": "blockus-builder.png",
+    "name": "Blockus",
+    "category": "templates",
+    "featured": true,
+    "url": "https://blockus.lndevui.com/builder"
+  },
   "harshsingh.me": {
     "filename": "harsh-singh-harshsingh-me.png",
     "name": "Harsh Singh",
@@ -237,6 +244,27 @@
     "featured": false,
     "url": "https://headlessui.com/"
   },
+  "ui.bklit.com": {
+    "filename": "bklit-ui.png",
+    "name": "Bklit UI",
+    "category": "components",
+    "featured": true,
+    "url": "https://ui.bklit.com"
+  },
+  "beui.saura3h.xyz": {
+    "filename": "beui-saura3h.png",
+    "name": "beUI",
+    "category": "components",
+    "featured": true,
+    "url": "https://beui.saura3h.xyz/"
+  },
+  "ui.extend.ai": {
+    "filename": "extend-ui.png",
+    "name": "Extend UI",
+    "category": "components",
+    "featured": true,
+    "url": "https://ui.extend.ai/ui"
+  },
   "remocn.dev": {
     "filename": "remocn-remocn-dev.png",
     "name": "Remocn",
@@ -250,6 +278,13 @@
     "category": "animation",
     "featured": true,
     "url": "https://rive.app/"
+  },
+  "github.com/diffusionstudio/lottie": {
+    "filename": "diffusionstudio-lottie.png",
+    "name": "Text-to-Lottie",
+    "category": "animation",
+    "featured": true,
+    "url": "https://github.com/diffusionstudio/lottie"
   },
   "loading-ui.com": {
     "filename": "loading-ui-loading-ui-com.png",

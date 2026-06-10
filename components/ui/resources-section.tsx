@@ -26,6 +26,7 @@ const inspirationTools = [
 ];
 
 const landingPageTemplates = [
+  { name: "Blockus", url: "https://blockus.lndevui.com/builder", description: "Visual builder for polished landing page blocks and copy-ready shadcn sections.", featured: true, previewImageSrc: "/screenshots/blockus-builder.png" },
   { name: "Browser Supply", url: "https://browser.supply", description: "Curated landing page templates and resources" },
   { name: "Framer Marketplace", url: "https://www.framer.com/marketplace", description: "Official Framer marketplace for templates" },
   { name: "Creative Market", url: "https://creativemarket.com/templates-themes/website-templates/framer-templates", description: "Framer templates on Creative Market" },
@@ -79,8 +80,11 @@ const designEngineerPortfolios = [
 ];
 
 const componentLibraries = [
+  { name: "Bklit UI", url: "https://ui.bklit.com", description: "Design-engineered charts and components with crisp dark-mode visuals.", featured: true, previewImageSrc: "/screenshots/bklit-ui.png" },
   { name: "Fluid Functionalism", url: "https://www.fluidfunctionalism.com/", description: "Refined UI components with satisfying hover states and polished interaction details.", featured: true, previewImageSrc: "/screenshots/fluid-functionalism.png" },
   { name: "Remocn", url: "https://www.remocn.dev/", description: "Copy-paste Remotion components, transitions, and animated backgrounds for shadcn projects.", featured: true, previewImageSrc: "/screenshots/remocn-remocn-dev.png" },
+  { name: "beUI", url: "https://beui.saura3h.xyz/", description: "Motion-first components for React and Tailwind with a distinctive pixel-heavy presentation.", featured: true, previewImageSrc: "/screenshots/beui-saura3h.png" },
+  { name: "Extend UI", url: "https://ui.extend.ai/ui", description: "Open-source UI kit for document-heavy apps, agents, and internal tools.", featured: true, previewImageSrc: "/screenshots/extend-ui.png" },
   { name: "21st Century Components", url: "https://21st.dev/", description: "Next-generation UI components", featured: true },
   { name: "Watermelon UI", url: "https://ui.watermelon.sh/", description: "High-quality React components registry with production-ready UI systems, dashboards, and blocks.", featured: true },
   { name: "Magic UI", url: "https://magicui.design/", description: "Beautiful React components with Tailwind", featured: true },
@@ -147,6 +151,13 @@ const componentLibraries = [
 ];
 
 const animationTools = [
+  {
+    name: "Text-to-Lottie",
+    url: "https://github.com/diffusionstudio/lottie",
+    description: "Open-source harness for generating production-ready Lottie animations with coding agents.",
+    featured: true,
+    previewImageSrc: "/screenshots/diffusionstudio-lottie.png",
+  },
   {
     name: "super-hover",
     url: "https://www.npmjs.com/package/super-hover",
