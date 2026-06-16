@@ -17,7 +17,7 @@ const inspirationTools = [
   { name: "NextFramer", url: "https://www.nextframer.com/", description: "Daily landing page templates built in public" },
   { name: "Sprrrint", url: "https://sprrrint.com/", description: "300+ Figma components and gradients, updated daily" },
   { name: "Web Interactions", url: "https://www.webinteractions.gallery/", description: "Animated elements gallery" },
-  { name: "Best Designs on X", url: "https://bestdesignsonx.com", description: "Daily curation of the best designs shared on X" },
+  { name: "Best Designs on X", url: "https://bestdesignsonx.com/", description: "Daily curation of the best designs shared on X", previewImageSrc: "/screenshots/best-designs-on-x-bestdesignsonx-com.png" },
   { name: "Mobbin", url: "https://mobbin.com/", description: "Discover real-world iOS & Web design inspiration" },
   { name: "Rebrand", url: "https://rebrand.gallery/", description: "Brand identity inspiration gallery" },
   { name: "Hugeicons", url: "https://hugeicons.com/?via=Abraham", description: "Icon library and icon design inspiration" },
@@ -152,6 +152,13 @@ const componentLibraries = [
 
 const animationTools = [
   {
+    name: "Text Motion",
+    url: "https://textmotion.dev/",
+    description: "Text animation presets and patterns for polished motion-heavy interfaces.",
+    featured: true,
+    previewImageSrc: "/screenshots/textmotion-textmotion-dev.png",
+  },
+  {
     name: "Text-to-Lottie",
     url: "https://github.com/diffusionstudio/lottie",
     description: "Open-source harness for generating production-ready Lottie animations with coding agents.",
@@ -187,6 +194,7 @@ const iconLibraries = [
 ];
 
 const utilityTools = [
+  { name: "Create UI", url: "https://createui.co/", description: "Generate and refine production-ready interface assets for modern web projects.", previewImageSrc: "/screenshots/create-ui-createui-co.png" },
   { name: "Tailwind Converter", url: "https://tailwindconverter.app/", description: "Convert CSS to Tailwind" },
   { name: "TwBlocks", url: "https://www.twblocks.com/", description: "React SaaS website blocks" },
   { name: "Fonttrio", url: "https://www.fonttrio.xyz/", description: "Font pairing tool with one-command setup for polished type systems", previewImageSrc: "/screenshots/fonttrio-fonttrio-xyz.png" },

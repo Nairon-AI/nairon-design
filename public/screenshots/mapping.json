@@ -55,6 +55,13 @@
     "featured": false,
     "url": "https://www.webinteractions.gallery/"
   },
+  "bestdesignsonx.com": {
+    "filename": "best-designs-on-x-bestdesignsonx-com.png",
+    "name": "Best Designs on X",
+    "category": "inspiration",
+    "featured": false,
+    "url": "https://bestdesignsonx.com/"
+  },
   "v0.dev": {
     "filename": "v0-v0-dev.png",
     "name": "v0",
@@ -369,6 +376,20 @@
     "category": "utility",
     "featured": false,
     "url": "https://soundcn.xyz/"
+  },
+  "textmotion.dev": {
+    "filename": "textmotion-textmotion-dev.png",
+    "name": "Text Motion",
+    "category": "animation",
+    "featured": true,
+    "url": "https://textmotion.dev/"
+  },
+  "createui.co": {
+    "filename": "create-ui-createui-co.png",
+    "name": "Create UI",
+    "category": "utility",
+    "featured": false,
+    "url": "https://createui.co/"
   },
   "smoothui.dev": {
     "filename": "smooth-ui-smoothui-dev.png",
