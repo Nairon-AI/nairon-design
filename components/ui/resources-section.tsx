@@ -173,6 +173,7 @@ const animationTools = [
     previewImageSrc: "/screenshots/super-hover-tweet.png",
   },
   { name: "Sileo", url: "https://sileo.aaryan.design/", description: "Opinionated physics-based toast library with SVG filters and frame-friendly motion optimization.", featured: true },
+  { name: "Velvet UI", url: "https://velvet-ui-eight.vercel.app/", description: "Interface sound studies for making UI moments feel intentional, tactile, and calm.", featured: true, previewImageSrc: "/screenshots/velvet-ui-eight-vercel-app.png" },
   { name: "Transitions.dev", url: "https://transitions.dev/", description: "Copy-paste transition patterns for web app states, cards, numbers, menus, modals, and badges.", featured: true },
   { name: "glimm", url: "https://glimm.dev/", description: "React and Next.js library for shader-driven route or state transitions with a GPU-composited WebGL sweep, under 10 KB with zero performance impact.", featured: true },
   { name: "Loading UI", url: "https://loading-ui.com/", description: "Open-source collection of spinners, loaders, and loading-state animations.", featured: true },
