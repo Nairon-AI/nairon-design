@@ -1,4 +1,11 @@
 {
+  "rareui.com": {
+    "filename": "rare-ui-rareui-com.png",
+    "name": "Rare UI",
+    "category": "components",
+    "featured": true,
+    "url": "https://www.rareui.com/"
+  },
   "layers.to": {
     "filename": "layers-layers-to.png",
     "name": "Layers",

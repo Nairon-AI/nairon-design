@@ -38,6 +38,7 @@ const allTools = [
   { name: "Onlook", url: "https://onlook.com/", category: "ai", featured: true },
 
   // Component Libraries
+  { name: "Rare UI", url: "https://www.rareui.com/", category: "components", featured: true },
   { name: "TweakCN", url: "https://tweakcn.com/", category: "components", featured: true },
   { name: "Magic UI", url: "https://magicui.design/", category: "components", featured: true },
   { name: "Aceternity UI", url: "https://ui.aceternity.com/", category: "components", featured: true },
