@@ -62,6 +62,7 @@ const allTools = [
   { name: "HeadlessUI", url: "https://headlessui.com/", category: "components" },
 
   // Animation Tools
+  { name: "Thinking Orbs", url: "https://orbs.jakubantalik.com/", category: "animation", featured: true },
   { name: "Rive", url: "https://rive.app/", category: "animation", featured: true },
   { name: "Loaders.wtf", url: "https://www.loaders.wtf/", category: "animation", featured: true },
   { name: "AnimeJS", url: "https://animejs.com/", category: "animation" },

@@ -173,6 +173,7 @@ const animationTools = [
     featured: true,
     previewImageSrc: "/screenshots/super-hover-tweet.png",
   },
+  { name: "Thinking Orbs", url: "https://orbs.jakubantalik.com/", description: "Dotted thinking indicators with six animated states for AI and agent interfaces.", featured: true, previewImageSrc: "/screenshots/thinking-orbs-orbs-jakubantalik-com.png" },
   { name: "Sileo", url: "https://sileo.aaryan.design/", description: "Opinionated physics-based toast library with SVG filters and frame-friendly motion optimization.", featured: true },
   { name: "Velvet UI", url: "https://velvet-ui-eight.vercel.app/", description: "Interface sound studies for making UI moments feel intentional, tactile, and calm.", featured: true, previewImageSrc: "/screenshots/velvet-ui-eight-vercel-app.png" },
   { name: "Transitions.dev", url: "https://transitions.dev/", description: "Copy-paste transition patterns for web app states, cards, numbers, menus, modals, and badges.", featured: true },

@@ -1,4 +1,11 @@
 {
+  "orbs.jakubantalik.com": {
+    "filename": "thinking-orbs-orbs-jakubantalik-com.png",
+    "name": "Thinking Orbs",
+    "category": "animation",
+    "featured": true,
+    "url": "https://orbs.jakubantalik.com/"
+  },
   "rareui.com": {
     "filename": "rare-ui-rareui-com.png",
     "name": "Rare UI",
