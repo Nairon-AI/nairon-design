@@ -1,4 +1,11 @@
 {
+  "dqnamo.com": {
+    "filename": "dqnamo-dqnamo-com.png",
+    "name": "dqnamo",
+    "category": "portfolio",
+    "featured": true,
+    "url": "https://www.dqnamo.com/"
+  },
   "orbs.jakubantalik.com": {
     "filename": "thinking-orbs-orbs-jakubantalik-com.png",
     "name": "Thinking Orbs",

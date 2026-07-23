@@ -37,6 +37,9 @@ const allTools = [
   { name: "SuperDesign", url: "http://superdesign.dev/", category: "ai", featured: true },
   { name: "Onlook", url: "https://onlook.com/", category: "ai", featured: true },
 
+  // Design Engineer Portfolios
+  { name: "dqnamo", url: "https://www.dqnamo.com/", category: "portfolio", featured: true },
+
   // Component Libraries
   { name: "Rare UI", url: "https://www.rareui.com/", category: "components", featured: true },
   { name: "TweakCN", url: "https://tweakcn.com/", category: "components", featured: true },

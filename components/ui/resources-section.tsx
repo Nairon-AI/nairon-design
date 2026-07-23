@@ -61,6 +61,13 @@ const designEngineering = [
 
 const designEngineerPortfolios = [
   {
+    name: "dqnamo",
+    url: "https://www.dqnamo.com/",
+    description: "London design engineer exploring user interfaces, prosumer productivity apps, and developer tools.",
+    featured: true,
+    previewImageSrc: "/screenshots/dqnamo-dqnamo-com.png",
+  },
+  {
     name: "Chanh Dai",
     url: "https://chanhdai.com/",
     description: "Open-source design engineer portfolio with a polished personal site, shadcn registry, and blog built around pixel-perfect front-end craft.",
