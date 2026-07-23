@@ -1,4 +1,11 @@
 {
+  "lab.moumen.dev": {
+    "filename": "moumenlab-lab-moumen-dev.png",
+    "name": "moumenlab",
+    "category": "components",
+    "featured": true,
+    "url": "https://lab.moumen.dev/"
+  },
   "dqnamo.com": {
     "filename": "dqnamo-dqnamo-com.png",
     "name": "dqnamo",

@@ -41,6 +41,7 @@ const allTools = [
   { name: "dqnamo", url: "https://www.dqnamo.com/", category: "portfolio", featured: true },
 
   // Component Libraries
+  { name: "moumenlab", url: "https://lab.moumen.dev/", category: "components", featured: true },
   { name: "Rare UI", url: "https://www.rareui.com/", category: "components", featured: true },
   { name: "TweakCN", url: "https://tweakcn.com/", category: "components", featured: true },
   { name: "Magic UI", url: "https://magicui.design/", category: "components", featured: true },

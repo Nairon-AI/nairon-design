@@ -87,6 +87,7 @@ const designEngineerPortfolios = [
 ];
 
 const componentLibraries = [
+  { name: "moumenlab", url: "https://lab.moumen.dev/", description: "Focused React and Tailwind components rethought for better feel, with copy-ready source and a shadcn registry.", featured: true, previewImageSrc: "/screenshots/moumenlab-lab-moumen-dev.png" },
   { name: "Rare UI", url: "https://www.rareui.com/", description: "Rare, animated components with copy-ready shadcn CLI installation.", featured: true, previewImageSrc: "/screenshots/rare-ui-rareui-com.png" },
   { name: "Bklit UI", url: "https://ui.bklit.com", description: "Design-engineered charts and components with crisp dark-mode visuals.", featured: true, previewImageSrc: "/screenshots/bklit-ui.png" },
   { name: "Fluid Functionalism", url: "https://www.fluidfunctionalism.com/", description: "Refined UI components with satisfying hover states and polished interaction details.", featured: true, previewImageSrc: "/screenshots/fluid-functionalism.png" },
