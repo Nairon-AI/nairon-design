@@ -161,6 +161,13 @@ const componentLibraries = [
 
 const animationTools = [
   {
+    name: "Amicro",
+    url: "https://amicro.vercel.app/",
+    description: "Curated premium micro-interactions and transition components for React, installable with a single CLI command.",
+    featured: true,
+    previewImageSrc: "/screenshots/amicro-amicro-vercel-app.png",
+  },
+  {
     name: "Text Motion",
     url: "https://textmotion.dev/",
     description: "Text animation presets and patterns for polished motion-heavy interfaces.",

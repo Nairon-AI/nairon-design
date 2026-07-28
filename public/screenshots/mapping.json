@@ -1,4 +1,11 @@
 {
+  "amicro.vercel.app": {
+    "filename": "amicro-amicro-vercel-app.png",
+    "name": "Amicro",
+    "category": "animation",
+    "featured": true,
+    "url": "https://amicro.vercel.app/"
+  },
   "lab.moumen.dev": {
     "filename": "moumenlab-lab-moumen-dev.png",
     "name": "moumenlab",
