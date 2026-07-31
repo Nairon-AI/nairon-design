@@ -1,4 +1,25 @@
 {
+  "interior.dev": {
+    "filename": "interior-dev-interior-dev.png",
+    "name": "Interior.dev",
+    "category": "animation",
+    "featured": true,
+    "url": "https://www.interior.dev/"
+  },
+  "great-ui.com": {
+    "filename": "great-ui-great-ui-com.png",
+    "name": "Great UI",
+    "category": "components",
+    "featured": true,
+    "url": "https://www.great-ui.com/"
+  },
+  "bakai.me": {
+    "filename": "bakai-bakai-me.png",
+    "name": "Bakai",
+    "category": "portfolio",
+    "featured": true,
+    "url": "https://www.bakai.me/"
+  },
   "amicro.vercel.app": {
     "filename": "amicro-amicro-vercel-app.png",
     "name": "Amicro",

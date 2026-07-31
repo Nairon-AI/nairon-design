@@ -61,6 +61,13 @@ const designEngineering = [
 
 const designEngineerPortfolios = [
   {
+    name: "Bakai",
+    url: "https://www.bakai.me/",
+    description: "Design engineer portfolio and project lab focused on intentional, meaningful interface work.",
+    featured: true,
+    previewImageSrc: "/screenshots/bakai-bakai-me.png",
+  },
+  {
     name: "dqnamo",
     url: "https://www.dqnamo.com/",
     description: "London design engineer exploring user interfaces, prosumer productivity apps, and developer tools.",
@@ -87,6 +94,7 @@ const designEngineerPortfolios = [
 ];
 
 const componentLibraries = [
+  { name: "Great UI", url: "https://www.great-ui.com/", description: "Premium React components built with Tailwind CSS, ready to copy, paste, and ship.", featured: true, previewImageSrc: "/screenshots/great-ui-great-ui-com.png" },
   { name: "moumenlab", url: "https://lab.moumen.dev/", description: "Focused React and Tailwind components rethought for better feel, with copy-ready source and a shadcn registry.", featured: true, previewImageSrc: "/screenshots/moumenlab-lab-moumen-dev.png" },
   { name: "Rare UI", url: "https://www.rareui.com/", description: "Rare, animated components with copy-ready shadcn CLI installation.", featured: true, previewImageSrc: "/screenshots/rare-ui-rareui-com.png" },
   { name: "Bklit UI", url: "https://ui.bklit.com", description: "Design-engineered charts and components with crisp dark-mode visuals.", featured: true, previewImageSrc: "/screenshots/bklit-ui.png" },
@@ -160,6 +168,13 @@ const componentLibraries = [
 ];
 
 const animationTools = [
+  {
+    name: "Interior.dev",
+    url: "https://www.interior.dev/",
+    description: "A thoughtful component library for the small moments between states, with resilient and accessible motion patterns.",
+    featured: true,
+    previewImageSrc: "/screenshots/interior-dev-interior-dev.png",
+  },
   {
     name: "Amicro",
     url: "https://amicro.vercel.app/",
