@@ -165,6 +165,7 @@ const componentLibraries = [
   { name: "Componentry", url: "https://www.componentry.fun/", description: "Refined, animated React primitives for premium product UI" },
   { name: "Code Blocks", url: "https://code-blocks.pheralb.dev/", description: "Beautiful code block components and utilities to show your snippets beautifully" },
   { name: "MapCN Blocks", url: "https://www.mapcn.dev/blocks", description: "Beautifully crafted map examples for common use cases — drop in, customize, and ship" },
+  { name: "Markdown Graphs", url: "https://mdx-graphs.kshv.me/docs", description: "Copy-ready ASCII data visualizations for shadcn projects, including tables, flows, bars, timelines, and more.", featured: true, previewImageSrc: "/screenshots/markdown-graphs-mdx-graphs-kshv-me.png" },
 ];
 
 const animationTools = [
