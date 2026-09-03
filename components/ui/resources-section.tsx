@@ -23,6 +23,7 @@ const inspirationTools = [
   { name: "Hugeicons", url: "https://hugeicons.com/?via=Abraham", description: "Icon library and icon design inspiration" },
   { name: "Component Gallery", url: "https://component.gallery/", description: "Design system component references" },
   { name: "60fps", url: "https://60fps.design/", description: "Endless collection of delightful details from best-in-class apps" },
+  { name: "Inspora", url: "https://www.inspora.design/", description: "Hourly-updated gallery of standout design work from creatives across the web", previewImageSrc: "/screenshots/inspora-inspora-design.png" },
 ];
 
 const landingPageTemplates = [
