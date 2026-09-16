@@ -4,6 +4,7 @@ import { Palette, Cpu, Package, Sparkles, Wrench, Star, LayoutTemplate, Shapes, 
 import { LinkPreview } from "@/components/ui/link-preview-static";
 
 const inspirationTools = [
+  { name: "Footer Design", url: "https://www.footer.design/", description: "Curated gallery of creative website footers", previewImageSrc: "/screenshots/footer-design.png" },
   { name: "Curated Design", url: "https://curated.design/", description: "Web design inspiration catalog" },
   { name: "Collect UI", url: "https://collectui.com/", description: "Daily user interface inspiration curated by design makers" },
   { name: "Landing Love", url: "https://landing.love/", description: "Curated landing page inspiration" },
@@ -95,6 +96,9 @@ const designEngineerPortfolios = [
 ];
 
 const componentLibraries = [
+  { name: "Beautiful UI", url: "https://www.beautifului.dev/", description: "Components for AI-native interfaces, from loading states to chat and approval cards.", previewImageSrc: "/screenshots/beautiful-ui.png" },
+  { name: "Kobra", url: "https://kobra.systems/", description: "A beautiful component library that doesn't let your startup look like a hackathon project.", previewImageSrc: "/screenshots/kobra.png" },
+  { name: "Bencho", url: "https://bencho.dev/", description: "Interactive UI blocks you can explore, tweak, and take straight into your projects.", previewImageSrc: "/screenshots/bencho.png" },
   { name: "Great UI", url: "https://www.great-ui.com/", description: "Premium React components built with Tailwind CSS, ready to copy, paste, and ship.", featured: true, previewImageSrc: "/screenshots/great-ui-great-ui-com.png" },
   { name: "moumenlab", url: "https://lab.moumen.dev/", description: "Focused React and Tailwind components rethought for better feel, with copy-ready source and a shadcn registry.", featured: true, previewImageSrc: "/screenshots/moumenlab-lab-moumen-dev.png" },
   { name: "Rare UI", url: "https://www.rareui.com/", description: "Rare, animated components with copy-ready shadcn CLI installation.", featured: true, previewImageSrc: "/screenshots/rare-ui-rareui-com.png" },
@@ -154,7 +158,7 @@ const componentLibraries = [
   { name: "Shadcn Studio", url: "https://shadcnstudio.com/", description: "Visual workspace and builder for creating shadcn/ui components" },
   { name: "Shadcn Editor", url: "https://shadcn-editor.vercel.app/", description: "Rich text editor and content editing components for shadcn/ui" },
   { name: "ShadcnUI Blocks", url: "https://shadcnui-blocks.com/", description: "Comprehensive collection of copy-paste blocks for shadcn/ui" },
-  { name: "Spectrum UI", url: "https://ui.spectrumhq.in/", description: "Wide spectrum of components covering diverse use cases and styles" },
+  { name: "Spectrum UI", url: "https://ui.spectrumhq.in/", description: "Animated components and blocks with MCP support for AI coding agents.", previewImageSrc: "/screenshots/spectrum-ui.png" },
   { name: "PatternCraft", url: "https://patterncraft.fun/", description: "Professional-grade background patterns and gradients. Easily copy the code and seamlessly integrate it into your projects. Crafted with modern CSS and Tailwind" },
   { name: "Taki UI", url: "https://taki-ui.com/", description: "Accessible components combining React Aria with shadcn design tokens" },
   { name: "UtilCN", url: "https://utilcn.dev/", description: "Utility components and helper functions for shadcn/ui development" },
@@ -229,6 +233,7 @@ const iconLibraries = [
 ];
 
 const utilityTools = [
+  { name: "Makefaster", url: "https://makefaster.dev/", description: "AI skill that discovers, tests, and implements website performance improvements.", previewImageSrc: "/screenshots/makefaster.png" },
   { name: "Create UI", url: "https://createui.co/", description: "Generate and refine production-ready interface assets for modern web projects.", previewImageSrc: "/screenshots/create-ui-createui-co.png" },
   { name: "Tailwind Converter", url: "https://tailwindconverter.app/", description: "Convert CSS to Tailwind" },
   { name: "TwBlocks", url: "https://www.twblocks.com/", description: "React SaaS website blocks" },
