@@ -4,6 +4,7 @@ import { Palette, Cpu, Package, Sparkles, Wrench, Star, LayoutTemplate, Shapes, 
 import { LinkPreview } from "@/components/ui/link-preview-static";
 
 const inspirationTools = [
+  { name: "Built by Designers", url: "https://builtbydesigners.com/", description: "Gallery of apps, tools, and creative projects built by designers.", previewImageSrc: "/screenshots/built-by-designers.png" },
   { name: "Footer Design", url: "https://www.footer.design/", description: "Curated gallery of creative website footers", previewImageSrc: "/screenshots/footer-design.png" },
   { name: "Curated Design", url: "https://curated.design/", description: "Web design inspiration catalog" },
   { name: "Collect UI", url: "https://collectui.com/", description: "Daily user interface inspiration curated by design makers" },
@@ -96,6 +97,9 @@ const designEngineerPortfolios = [
 ];
 
 const componentLibraries = [
+  { name: "UImaxxing", url: "https://uimaxx.ing/", description: "Copy-ready UI components for prompts, agent tools, dashboards, and motion, installable via shadcn.", previewImageSrc: "/screenshots/uimaxxing.png" },
+  { name: "UI by Halaska", url: "https://ui.halaska.com/", description: "UI kit and UX patterns for AI products, built on shadcn/ui with an install prompt for coding agents.", previewImageSrc: "/screenshots/ui-by-halaska.png" },
+  { name: "AICSS", url: "https://aicss.dev/", description: "Copy-paste UI blocks for AI conversations, including thinking states, tool calls, and streaming text.", previewImageSrc: "/screenshots/aicss.png" },
   { name: "Beautiful UI", url: "https://www.beautifului.dev/", description: "Components for AI-native interfaces, from loading states to chat and approval cards.", previewImageSrc: "/screenshots/beautiful-ui.png" },
   { name: "Kobra", url: "https://kobra.systems/", description: "A beautiful component library that doesn't let your startup look like a hackathon project.", previewImageSrc: "/screenshots/kobra.png" },
   { name: "Bencho", url: "https://bencho.dev/", description: "Interactive UI blocks you can explore, tweak, and take straight into your projects.", previewImageSrc: "/screenshots/bencho.png" },
@@ -105,7 +109,7 @@ const componentLibraries = [
   { name: "Bklit UI", url: "https://ui.bklit.com", description: "Design-engineered charts and components with crisp dark-mode visuals.", featured: true, previewImageSrc: "/screenshots/bklit-ui.png" },
   { name: "Fluid Functionalism", url: "https://www.fluidfunctionalism.com/", description: "Refined UI components with satisfying hover states and polished interaction details.", featured: true, previewImageSrc: "/screenshots/fluid-functionalism.png" },
   { name: "Remocn", url: "https://www.remocn.dev/", description: "Copy-paste Remotion components, transitions, and animated backgrounds for shadcn projects.", featured: true, previewImageSrc: "/screenshots/remocn-remocn-dev.png" },
-  { name: "beUI", url: "https://beui.saura3h.xyz/", description: "Motion-first components for React and Tailwind with a distinctive pixel-heavy presentation.", featured: true, previewImageSrc: "/screenshots/beui-saura3h.png" },
+  { name: "beUI", url: "https://beui.dev/", description: "Animated React and Next.js components built with Motion and Tailwind CSS, distributed via shadcn.", featured: true, previewImageSrc: "/screenshots/beui-saura3h.png" },
   { name: "Extend UI", url: "https://ui.extend.ai/ui", description: "Open-source UI kit for document-heavy apps, agents, and internal tools.", featured: true, previewImageSrc: "/screenshots/extend-ui.png" },
   { name: "21st Century Components", url: "https://21st.dev/", description: "Next-generation UI components", featured: true },
   { name: "Watermelon UI", url: "https://ui.watermelon.sh/", description: "High-quality React components registry with production-ready UI systems, dashboards, and blocks.", featured: true },
@@ -174,6 +178,7 @@ const componentLibraries = [
 ];
 
 const animationTools = [
+  { name: "Libraries.dev", url: "https://libraries.dev/", description: "React effects for border beams, thinking orbs, gooey motion, liquid metal, and image-generation loaders.", previewImageSrc: "/screenshots/libraries-dev.png" },
   {
     name: "Interior.dev",
     url: "https://www.interior.dev/",
